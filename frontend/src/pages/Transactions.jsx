@@ -70,11 +70,17 @@ export default function Transactions() {
     return 0;
   });
 
-  const exportCSV = () => {
+  const exportData = (type) => {
+    let toExport = sorted;
+    if (type === 'income') toExport = sorted.filter(t => t.type === 'income');
+    else if (type === 'expense') toExport = sorted.filter(t => t.type === 'expense');
+
+    if (toExport.length === 0) return toast({ message: `No ${type || 'matching'} transactions to export`, type: 'error' });
+
     const headers = ['Date', 'Description', 'Category', 'Type', 'Amount'];
-    const rows = sorted.map(t => [
+    const rows = toExport.map(t => [
       new Date(t.date).toLocaleDateString('en-IN'),
-      `"${t.description}"`,
+      `"${t.description.replace(/"/g, '""')}"`,
       t.category,
       t.type,
       t.amount,
@@ -84,7 +90,7 @@ export default function Transactions() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `arthaview-transactions-${Date.now()}.csv`;
+    a.download = `arthaview-${type ? type + '-' : ''}transactions.csv`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -145,9 +151,24 @@ export default function Transactions() {
               <option value="expense">Expense</option>
             </select>
           </div>
-          <button className="btn btn-secondary" onClick={exportCSV} disabled={transactions.length === 0}>
-            📥 Export CSV
-          </button>
+          <div className="form-group" style={{ marginBottom: 0 }}>
+            <select 
+              className="form-select filter-select" 
+              style={{ fontWeight: 600, cursor: 'pointer' }}
+              onChange={(e) => {
+                if (e.target.value) { 
+                  exportData(e.target.value === 'all' ? '' : e.target.value); 
+                  e.target.value = ''; 
+                }
+              }}
+              disabled={transactions.length === 0}
+            >
+              <option value="">📥 Export CSV...</option>
+              <option value="all">Export All</option>
+              <option value="income">Export Income Only</option>
+              <option value="expense">Export Expense Only</option>
+            </select>
+          </div>
           <button className="btn btn-primary" onClick={() => setShowForm(!showForm)}>
             {showForm ? '✕ Cancel' : '+ Add Transaction'}
           </button>
