@@ -5,16 +5,10 @@ import { uploadCSV, uploadPDF } from '../api/client';
 import { useToast } from '../context/ToastContext';
 import './Upload.css';
 
-const SAMPLE_CSV = `Date,Description,Amount,Type,Category
-2026-03-01,Product Sales,45000,income,Sales
-2026-03-05,Office Rent,12000,expense,Rent
-2026-03-10,Staff Salaries,25000,expense,Salaries
-2026-03-15,Service Revenue,32000,income,Services
-2026-03-20,Raw Materials,18000,expense,Inventory`;
+
 
 const FILE_TYPES = {
   csv: { label: 'CSV / Excel Export', icon: '📊', ext: '.csv', accept: { 'text/csv': ['.csv'] }, color: '#22d3a5', desc: 'From Tally, Excel, Google Sheets, Zoho' },
-  pdf: { label: 'Bank Statement PDF', icon: '🏦', ext: '.pdf', accept: { 'application/pdf': ['.pdf'] }, color: '#7c6ff7', desc: 'Text-based bank statement (not scanned/image)' },
 };
 
 function DropZone({ fileType, onFile, file, onClear }) {
@@ -50,6 +44,9 @@ function DropZone({ fileType, onFile, file, onClear }) {
           </div>
           <div className="dropzone-sub">{cfg.desc}</div>
           <div className="dropzone-sub" style={{ marginTop: 6 }}>or click to browse &middot; {cfg.ext.toUpperCase()} only &middot; Max 20MB</div>
+          <div className="dropzone-sub" style={{ marginTop: 12, color: 'var(--accent-green)', fontWeight: 500 }}>
+            ✨ Imports safely append to your existing data. Nothing is overwritten.
+          </div>
         </div>
       )}
     </div>
@@ -57,7 +54,7 @@ function DropZone({ fileType, onFile, file, onClear }) {
 }
 
 export default function Upload() {
-  const [activeTab, setActiveTab] = useState('pdf');
+  const [activeTab, setActiveTab] = useState('csv');
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [result, setResult] = useState(null);
@@ -89,13 +86,38 @@ export default function Upload() {
     const a = document.createElement('a'); a.href = url; a.download = 'arthaview_sample.csv';
     a.click(); URL.revokeObjectURL(url);
   };
+    
+    const cfg = configs[typeId] || configs.ecommerce;
+    const start = new Date(); start.setMonth(start.getMonth() - 7);
+    const end = new Date();
+    
+    const rows = [];
+    for (let i = 0; i < 115; i++) {
+      const d = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+      const isInc = Math.random() > 0.65;
+      const type = isInc ? 'income' : 'expense';
+      const amount = Math.floor(Math.random() * 80000) + (isInc ? 5000 : 1000);
+      
+      let cat = isInc ? cfg.inc[Math.floor(Math.random() * cfg.inc.length)] : cfg.exp[Math.floor(Math.random() * cfg.exp.length)];
+      let desc = isInc ? `Invoice #${1000+Math.floor(Math.random()*9000)} Payment` : `Vendor Payment - ${cat}`;
+      
+      rows.push({ date: d.toISOString().split('T')[0], desc, amount, type, cat });
+    }
+    
+    rows.sort((a,b) => new Date(a.date) - new Date(b.date));
+    rows.forEach(r => { csv += `${r.date},"${r.desc}",${r.amount},${r.type},${r.cat}\n`; });
+    
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = `arthaview_${typeId}_sample.csv`;
+    a.click(); URL.revokeObjectURL(url);
+  };
 
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Header title="Import Data" subtitle="Upload bank statements or CSV exports" />
         <div style={{ paddingRight: 32, display: 'flex', gap: 8 }}>
-          <span className="badge badge-purple">PDF</span>
           <span className="badge badge-green">CSV</span>
         </div>
       </div>
@@ -116,31 +138,7 @@ export default function Upload() {
         <div className="upload-layout">
           <div className="upload-main">
 
-            {/* Tabs */}
-            <div className="upload-tabs">
-              {Object.entries(FILE_TYPES).map(([key, cfg]) => (
-                <button
-                  key={key}
-                  className={`upload-tab ${activeTab === key ? 'active' : ''}`}
-                  onClick={() => handleTabChange(key)}
-                  style={activeTab === key ? { borderColor: cfg.color, color: cfg.color, background: `${cfg.color}14` } : {}}
-                >
-                  <span>{cfg.icon}</span>
-                  <span>{cfg.label}</span>
-                </button>
-              ))}
-            </div>
 
-            {/* PDF tip */}
-            {activeTab === 'pdf' && (
-              <div className="pdf-tip animate-in">
-                <span>ℹ️</span>
-                <span>
-                  Works best with <strong>text-based PDFs</strong> directly downloaded from your bank's internet banking portal.
-                  Scanned or photographed statements (image PDFs) are not supported — use your bank's CSV export instead.
-                </span>
-              </div>
-            )}
 
             {/* Drop Zone */}
             <DropZone
@@ -158,7 +156,7 @@ export default function Upload() {
                 disabled={uploading}
               >
                 {uploading
-                  ? `⏳ ${activeTab === 'pdf' ? 'Parsing statement...' : 'Processing CSV...'}`
+                  ? `⏳ Processing CSV...`
                   : `⬆ Import ${FILE_TYPES[activeTab].label}`}
               </button>
             )}
@@ -170,11 +168,7 @@ export default function Upload() {
                 <div>
                   <div className="error-title">Import Failed</div>
                   <div className="error-msg">{error}</div>
-                  {activeTab === 'pdf' && (
-                    <div className="error-hint">
-                      💡 Tip: Try downloading the statement as <strong>CSV</strong> from your bank's portal and use the CSV tab instead.
-                    </div>
-                  )}
+
                 </div>
               </div>
             )}
@@ -208,16 +202,7 @@ export default function Upload() {
 
           {/* Right Info Panel */}
           <div className="upload-info">
-            <div className="card">
-              <div className="info-heading">🏦 Supported Bank PDFs</div>
-              <div className="source-list">
-                {['SBI · HDFC · ICICI · Axis Bank', 'Kotak · Yes Bank · PNB · BOI', 'Any text-based PDF statement', 'Paytm Business / PhonePe reports', 'RazorpayX bank statements'].map((s, i) => (
-                  <div key={i} className="source-item">
-                    <span className="source-check">✓</span><span>{s}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+
 
             <div className="card">
               <div className="info-heading">📋 CSV Format Guide</div>
@@ -233,15 +218,28 @@ export default function Upload() {
                 ))}
               </div>
               <div className="divider" />
-              <button className="btn btn-secondary" style={{ width: '100%', justifyContent: 'center' }} onClick={downloadSample}>
-                ⬇ Download Sample CSV
-              </button>
+              <div className="form-group" style={{ marginBottom: 0 }}>
+                <select 
+                  className="form-select" 
+                  style={{ textAlign: 'center', fontWeight: 600, color: 'var(--text-primary)', cursor: 'pointer' }}
+                  onChange={(e) => {
+                    if (e.target.value) { downloadSample(e.target.value); e.target.value = ''; }
+                  }}
+                >
+                  <option value="">⬇ Download Sample Data</option>
+                  <option value="ecommerce">E-Commerce Business</option>
+                  <option value="freelance">Freelance / Independent</option>
+                  <option value="retail">Retail Store</option>
+                  <option value="agency">Service Agency</option>
+                  <option value="manufacturing">Manufacturing Plant</option>
+                </select>
+              </div>
             </div>
 
             <div className="card">
               <div className="info-heading">🔐 Security Promise</div>
               <div className="security-list">
-                {['PDF parsed in memory — never written to disk', 'Raw file discarded after extraction', 'No bank credentials required', 'Delete all data anytime from Transactions'].map((s, i) => (
+                {['Imported files safely append to existing records', 'File parsed in memory — never written to disk', 'Raw file discarded after extraction', 'No bank credentials required', 'Delete all data anytime from Transactions'].map((s, i) => (
                   <div key={i} className="security-item">
                     <span>🛡️</span>
                     <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>{s}</span>
