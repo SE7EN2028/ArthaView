@@ -179,4 +179,28 @@ router.get('/health-score', (req, res) => {
   res.json({ success: true, data: { score, grade, profitMargin: (profitMargin * 100).toFixed(1) } });
 });
 
+// GET quick stats summary
+router.get('/stats', (req, res) => {
+  try {
+    const txns = getTransactions();
+    const income = txns.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
+    const expenses = txns.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
+    const categories = [...new Set(txns.map(t => t.category))].length;
+    res.json({
+      success: true,
+      data: {
+        totalTransactions: txns.length,
+        totalIncome: income,
+        totalExpenses: expenses,
+        netProfit: income - expenses,
+        uniqueCategories: categories,
+        healthyBalance: income > expenses,
+      }
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'Failed to compute stats', error: err.message });
+  }
+});
+
 export default router;
+
