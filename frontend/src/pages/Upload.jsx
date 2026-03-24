@@ -245,7 +245,7 @@ export default function Upload() {
             <div className="card">
               <div className="info-heading">🔐 Security Promise</div>
               <div className="security-list">
-                {['Imported files safely append to existing records', 'File parsed in memory — never written to disk', 'Raw file discarded after extraction', 'No bank credentials required', 'Delete all data anytime from Transactions'].map((s, i) => (
+                {['All imports safely append to your existing records', 'File parsed in-memory — never written to disk', 'Raw file discarded immediately after processing', 'No bank credentials or OAuth required', 'Delete all data anytime from the Transactions page'].map((s, i) => (
                   <div key={i} className="security-item">
                     <span>🛡️</span>
                     <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>{s}</span>
