@@ -1,1 +1,1282 @@
-[]
+[
+  {
+    "date": "2025-09-02",
+    "description": "Electricity & Internet Bill",
+    "amount": 5568,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400936349"
+  },
+  {
+    "date": "2025-09-04",
+    "description": "Amazon Seller Payout",
+    "amount": 38512,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400217927"
+  },
+  {
+    "date": "2025-09-04",
+    "description": "Wholesale Purchase",
+    "amount": 17260,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400475393"
+  },
+  {
+    "date": "2025-09-05",
+    "description": "Online Sales - Meesho payout",
+    "amount": 30738,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400066025"
+  },
+  {
+    "date": "2025-09-05",
+    "description": "Online Sales - Meesho payout",
+    "amount": 32230,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400457144"
+  },
+  {
+    "date": "2025-09-06",
+    "description": "Electricity & Internet Bill",
+    "amount": 5665,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400381634"
+  },
+  {
+    "date": "2025-09-06",
+    "description": "Product Sales - In-store",
+    "amount": 50907,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400124891"
+  },
+  {
+    "date": "2025-09-08",
+    "description": "Shop Rent - January",
+    "amount": 14102,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400600526"
+  },
+  {
+    "date": "2025-09-09",
+    "description": "Bulk Order - Corporate client",
+    "amount": 93898,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400706164"
+  },
+  {
+    "date": "2025-09-10",
+    "description": "Product Sales - In-store",
+    "amount": 65106,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400105237"
+  },
+  {
+    "date": "2025-09-10",
+    "description": "Google Ads Campaign",
+    "amount": 6847,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400478934"
+  },
+  {
+    "date": "2025-09-10",
+    "description": "Staff Salary - 2 employees",
+    "amount": 24034,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400758047"
+  },
+  {
+    "date": "2025-09-12",
+    "description": "Bulk Order - Corporate client",
+    "amount": 89853,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400531947"
+  },
+  {
+    "date": "2025-09-12",
+    "description": "Staff Salary - 2 employees",
+    "amount": 26681,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400648663"
+  },
+  {
+    "date": "2025-09-13",
+    "description": "Shop Rent - January",
+    "amount": 16310,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400809485"
+  },
+  {
+    "date": "2025-09-18",
+    "description": "Amazon Seller Payout",
+    "amount": 36849,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400375969"
+  },
+  {
+    "date": "2025-09-20",
+    "description": "Shop Rent - March",
+    "amount": 13598,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400304458"
+  },
+  {
+    "date": "2025-09-20",
+    "description": "Online Sales - Flipkart payout",
+    "amount": 30082,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400056489"
+  },
+  {
+    "date": "2025-09-22",
+    "description": "Electricity & Internet Bill",
+    "amount": 6053,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400252294"
+  },
+  {
+    "date": "2025-09-23",
+    "description": "Accounting Software",
+    "amount": 2684,
+    "type": "expense",
+    "category": "Software",
+    "id": "1774389834400898845"
+  },
+  {
+    "date": "2025-09-23",
+    "description": "Amazon Seller Payout",
+    "amount": 38716,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400730611"
+  },
+  {
+    "date": "2025-09-24",
+    "description": "Shop Rent - March",
+    "amount": 16556,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400583192"
+  },
+  {
+    "date": "2025-09-26",
+    "description": "Electricity & Internet Bill",
+    "amount": 4823,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400935028"
+  },
+  {
+    "date": "2025-09-28",
+    "description": "Electricity & Internet Bill",
+    "amount": 5271,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400260656"
+  },
+  {
+    "date": "2025-09-28",
+    "description": "Accounting Software",
+    "amount": 2560,
+    "type": "expense",
+    "category": "Software",
+    "id": "1774389834400766306"
+  },
+  {
+    "date": "2025-09-30",
+    "description": "Staff Salary - 2 employees",
+    "amount": 30102,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400735493"
+  },
+  {
+    "date": "2025-09-30",
+    "description": "Online Sales - Meesho payout",
+    "amount": 27186,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400061897"
+  },
+  {
+    "date": "2025-10-01",
+    "description": "Online Sales - Meesho payout",
+    "amount": 28824,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400713401"
+  },
+  {
+    "date": "2025-10-03",
+    "description": "Shop Rent - February",
+    "amount": 13158,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400156614"
+  },
+  {
+    "date": "2025-10-05",
+    "description": "Product Sales - Electronics",
+    "amount": 63464,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400800576"
+  },
+  {
+    "date": "2025-10-06",
+    "description": "Inventory Restock - Laptops",
+    "amount": 38820,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400459020"
+  },
+  {
+    "date": "2025-10-07",
+    "description": "Electricity & Internet Bill",
+    "amount": 5130,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400283478"
+  },
+  {
+    "date": "2025-10-07",
+    "description": "Shop Rent - February",
+    "amount": 13930,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400870287"
+  },
+  {
+    "date": "2025-10-10",
+    "description": "Product Sales - Electronics",
+    "amount": 54979,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400459102"
+  },
+  {
+    "date": "2025-10-13",
+    "description": "Shop Rent - January",
+    "amount": 14102,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400474179"
+  },
+  {
+    "date": "2025-10-13",
+    "description": "Staff Salary - 2 employees",
+    "amount": 30438,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400202264"
+  },
+  {
+    "date": "2025-10-13",
+    "description": "Product Sales - In-store",
+    "amount": 62170,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400765344"
+  },
+  {
+    "date": "2025-10-16",
+    "description": "Online Sales - Meesho payout",
+    "amount": 28692,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400330338"
+  },
+  {
+    "date": "2025-10-17",
+    "description": "Wholesale Purchase",
+    "amount": 20069,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400644520"
+  },
+  {
+    "date": "2025-10-19",
+    "description": "Electricity & Internet Bill",
+    "amount": 4849,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400306181"
+  },
+  {
+    "date": "2025-10-20",
+    "description": "Bulk Order - Corporate client",
+    "amount": 94350,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400306197"
+  },
+  {
+    "date": "2025-10-24",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 18350,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400846224"
+  },
+  {
+    "date": "2025-10-24",
+    "description": "Online Sales - Flipkart payout",
+    "amount": 30885,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400928316"
+  },
+  {
+    "date": "2025-10-24",
+    "description": "Electricity & Internet Bill",
+    "amount": 5259,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400122598"
+  },
+  {
+    "date": "2025-10-24",
+    "description": "Staff Salary - 2 employees",
+    "amount": 27424,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400600239"
+  },
+  {
+    "date": "2025-10-25",
+    "description": "Electricity & Internet Bill",
+    "amount": 4804,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400133948"
+  },
+  {
+    "date": "2025-10-26",
+    "description": "Shop Rent - March",
+    "amount": 16257,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400057777"
+  },
+  {
+    "date": "2025-10-27",
+    "description": "Shop Rent - January",
+    "amount": 14525,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400603761"
+  },
+  {
+    "date": "2025-10-28",
+    "description": "Google Ads Campaign",
+    "amount": 5308,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400702821"
+  },
+  {
+    "date": "2025-10-29",
+    "description": "Staff Salary - 2 employees",
+    "amount": 29416,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400020317"
+  },
+  {
+    "date": "2025-10-30",
+    "description": "Shop Rent - January",
+    "amount": 13747,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400568324"
+  },
+  {
+    "date": "2025-11-01",
+    "description": "Wholesale Purchase",
+    "amount": 17297,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400885485"
+  },
+  {
+    "date": "2025-11-03",
+    "description": "New Display Rack",
+    "amount": 6936,
+    "type": "expense",
+    "category": "Equipment",
+    "id": "1774389834400797458"
+  },
+  {
+    "date": "2025-11-03",
+    "description": "Electricity & Internet Bill",
+    "amount": 5426,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400394984"
+  },
+  {
+    "date": "2025-11-06",
+    "description": "Bulk Order - Corporate client",
+    "amount": 92883,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400892140"
+  },
+  {
+    "date": "2025-11-06",
+    "description": "New Display Rack",
+    "amount": 7304,
+    "type": "expense",
+    "category": "Equipment",
+    "id": "1774389834400458150"
+  },
+  {
+    "date": "2025-11-07",
+    "description": "Shop Rent - February",
+    "amount": 15781,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400051290"
+  },
+  {
+    "date": "2025-11-08",
+    "description": "Staff Salary - 2 employees",
+    "amount": 24503,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400304702"
+  },
+  {
+    "date": "2025-11-11",
+    "description": "Electricity & Internet Bill",
+    "amount": 5114,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400774398"
+  },
+  {
+    "date": "2025-11-13",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 19042,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400877246"
+  },
+  {
+    "date": "2025-11-14",
+    "description": "Product Sales - In-store",
+    "amount": 49903,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400880579"
+  },
+  {
+    "date": "2025-11-15",
+    "description": "Shop Rent - January",
+    "amount": 15856,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400603264"
+  },
+  {
+    "date": "2025-11-18",
+    "description": "Accounting Software",
+    "amount": 2673,
+    "type": "expense",
+    "category": "Software",
+    "id": "1774389834400668915"
+  },
+  {
+    "date": "2025-11-19",
+    "description": "Staff Salary - 2 employees",
+    "amount": 27047,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400260668"
+  },
+  {
+    "date": "2025-11-21",
+    "description": "Staff Salary - 2 employees",
+    "amount": 26452,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400868228"
+  },
+  {
+    "date": "2025-11-26",
+    "description": "Staff Salary - 2 employees",
+    "amount": 24136,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400577559"
+  },
+  {
+    "date": "2025-11-29",
+    "description": "Product Sales - In-store",
+    "amount": 59265,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400603333"
+  },
+  {
+    "date": "2025-11-29",
+    "description": "Wholesale Purchase",
+    "amount": 17401,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400159003"
+  },
+  {
+    "date": "2025-11-30",
+    "description": "Electricity & Internet Bill",
+    "amount": 4268,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400833846"
+  },
+  {
+    "date": "2025-11-30",
+    "description": "Bulk Order - Corporate client",
+    "amount": 90767,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400713137"
+  },
+  {
+    "date": "2025-12-01",
+    "description": "Accounting Software",
+    "amount": 2546,
+    "type": "expense",
+    "category": "Software",
+    "id": "1774389834400159902"
+  },
+  {
+    "date": "2025-12-01",
+    "description": "Shop Rent - February",
+    "amount": 13234,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400754107"
+  },
+  {
+    "date": "2025-12-01",
+    "description": "Online Sales - Meesho payout",
+    "amount": 25062,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400423449"
+  },
+  {
+    "date": "2025-12-01",
+    "description": "Product Sales - In-store",
+    "amount": 66171,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400498398"
+  },
+  {
+    "date": "2025-12-01",
+    "description": "Staff Salary - 2 employees",
+    "amount": 31554,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400258582"
+  },
+  {
+    "date": "2025-12-02",
+    "description": "Shop Rent - January",
+    "amount": 16682,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400042407"
+  },
+  {
+    "date": "2025-12-07",
+    "description": "Product Sales - In-store",
+    "amount": 53798,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400878037"
+  },
+  {
+    "date": "2025-12-08",
+    "description": "Wholesale Purchase",
+    "amount": 16419,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400850268"
+  },
+  {
+    "date": "2025-12-10",
+    "description": "Electricity & Internet Bill",
+    "amount": 5519,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400609136"
+  },
+  {
+    "date": "2025-12-11",
+    "description": "Wholesale Purchase",
+    "amount": 15246,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400503727"
+  },
+  {
+    "date": "2025-12-15",
+    "description": "Staff Salary - 2 employees",
+    "amount": 30138,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400809214"
+  },
+  {
+    "date": "2025-12-19",
+    "description": "Google Ads Campaign",
+    "amount": 6847,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400921251"
+  },
+  {
+    "date": "2025-12-19",
+    "description": "Bulk Order - Corporate client",
+    "amount": 88705,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400089252"
+  },
+  {
+    "date": "2025-12-19",
+    "description": "Shop Rent - March",
+    "amount": 14353,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400683679"
+  },
+  {
+    "date": "2025-12-20",
+    "description": "Electricity & Internet Bill",
+    "amount": 4579,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400312216"
+  },
+  {
+    "date": "2025-12-23",
+    "description": "Wholesale Purchase",
+    "amount": 15509,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400256064"
+  },
+  {
+    "date": "2025-12-24",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 20116,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400780358"
+  },
+  {
+    "date": "2025-12-24",
+    "description": "Online Sales - Flipkart payout",
+    "amount": 31795,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400377046"
+  },
+  {
+    "date": "2025-12-24",
+    "description": "New Display Rack",
+    "amount": 7053,
+    "type": "expense",
+    "category": "Equipment",
+    "id": "1774389834400252163"
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Google Ads Campaign",
+    "amount": 6486,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400124688"
+  },
+  {
+    "date": "2025-12-26",
+    "description": "Shop Rent - March",
+    "amount": 13306,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400786542"
+  },
+  {
+    "date": "2025-12-27",
+    "description": "Wholesale Purchase",
+    "amount": 16255,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400841068"
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Amazon Seller Payout",
+    "amount": 36286,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400737675"
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Amazon Seller Payout",
+    "amount": 36635,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400194521"
+  },
+  {
+    "date": "2026-01-01",
+    "description": "Electricity & Internet Bill",
+    "amount": 5601,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400578581"
+  },
+  {
+    "date": "2026-01-01",
+    "description": "Bulk Order - Corporate client",
+    "amount": 79747,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400529474"
+  },
+  {
+    "date": "2026-01-02",
+    "description": "Shop Rent - March",
+    "amount": 16011,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400189631"
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Wholesale Purchase",
+    "amount": 18734,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400433804"
+  },
+  {
+    "date": "2026-01-05",
+    "description": "Google Ads Campaign",
+    "amount": 5582,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400098965"
+  },
+  {
+    "date": "2026-01-05",
+    "description": "Inventory Restock - Laptops",
+    "amount": 31810,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400895729"
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Electricity & Internet Bill",
+    "amount": 5717,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400631950"
+  },
+  {
+    "date": "2026-01-08",
+    "description": "Product Sales - In-store",
+    "amount": 65121,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400363260"
+  },
+  {
+    "date": "2026-01-09",
+    "description": "Google Ads Campaign",
+    "amount": 5589,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400107370"
+  },
+  {
+    "date": "2026-01-09",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 20019,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400711612"
+  },
+  {
+    "date": "2026-01-10",
+    "description": "Shop Rent - March",
+    "amount": 14959,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400684887"
+  },
+  {
+    "date": "2026-01-10",
+    "description": "Shop Rent - March",
+    "amount": 13294,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400758115"
+  },
+  {
+    "date": "2026-01-11",
+    "description": "Product Sales - In-store",
+    "amount": 68585,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400669544"
+  },
+  {
+    "date": "2026-01-12",
+    "description": "Inventory Restock - Laptops",
+    "amount": 30743,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400945989"
+  },
+  {
+    "date": "2026-01-13",
+    "description": "Accounting Software",
+    "amount": 2521,
+    "type": "expense",
+    "category": "Software",
+    "id": "1774389834400249586"
+  },
+  {
+    "date": "2026-01-14",
+    "description": "Amazon Seller Payout",
+    "amount": 41645,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400373362"
+  },
+  {
+    "date": "2026-01-15",
+    "description": "Accounting Software",
+    "amount": 2189,
+    "type": "expense",
+    "category": "Software",
+    "id": "1774389834400606613"
+  },
+  {
+    "date": "2026-01-16",
+    "description": "Amazon Seller Payout",
+    "amount": 42403,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400081977"
+  },
+  {
+    "date": "2026-01-19",
+    "description": "Staff Salary - 2 employees",
+    "amount": 27047,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400225237"
+  },
+  {
+    "date": "2026-01-21",
+    "description": "Amazon Seller Payout",
+    "amount": 44550,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400211442"
+  },
+  {
+    "date": "2026-01-22",
+    "description": "Electricity & Internet Bill",
+    "amount": 5309,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400939655"
+  },
+  {
+    "date": "2026-01-24",
+    "description": "Product Sales - In-store",
+    "amount": 77931,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400414105"
+  },
+  {
+    "date": "2026-01-27",
+    "description": "Shop Rent - February",
+    "amount": 13931,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400242906"
+  },
+  {
+    "date": "2026-01-27",
+    "description": "Online Sales - Meesho payout",
+    "amount": 32790,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400934637"
+  },
+  {
+    "date": "2026-01-29",
+    "description": "Online Sales - Flipkart payout",
+    "amount": 31007,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400635693"
+  },
+  {
+    "date": "2026-01-30",
+    "description": "Product Sales - Electronics",
+    "amount": 70016,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400154851"
+  },
+  {
+    "date": "2026-01-30",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 20362,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400511574"
+  },
+  {
+    "date": "2026-01-31",
+    "description": "Shop Rent - January",
+    "amount": 13771,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400171421"
+  },
+  {
+    "date": "2026-02-01",
+    "description": "New Display Rack",
+    "amount": 7126,
+    "type": "expense",
+    "category": "Equipment",
+    "id": "1774389834400420705"
+  },
+  {
+    "date": "2026-02-02",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 23013,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400912181"
+  },
+  {
+    "date": "2026-02-04",
+    "description": "Shop Rent - February",
+    "amount": 16740,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400697585"
+  },
+  {
+    "date": "2026-02-06",
+    "description": "Electricity & Internet Bill",
+    "amount": 6321,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400430919"
+  },
+  {
+    "date": "2026-02-06",
+    "description": "Electricity & Internet Bill",
+    "amount": 5762,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400098546"
+  },
+  {
+    "date": "2026-02-07",
+    "description": "Staff Salary - 2 employees",
+    "amount": 27423,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400407815"
+  },
+  {
+    "date": "2026-02-09",
+    "description": "Google Ads Campaign",
+    "amount": 6237,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400659841"
+  },
+  {
+    "date": "2026-02-11",
+    "description": "Online Sales - Flipkart payout",
+    "amount": 29401,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400967741"
+  },
+  {
+    "date": "2026-02-14",
+    "description": "Product Sales - In-store",
+    "amount": 65878,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400215806"
+  },
+  {
+    "date": "2026-02-15",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 22470,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400594009"
+  },
+  {
+    "date": "2026-02-17",
+    "description": "Bulk Order - Corporate client",
+    "amount": 72846,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400230232"
+  },
+  {
+    "date": "2026-02-19",
+    "description": "Product Sales - Electronics",
+    "amount": 59372,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400654241"
+  },
+  {
+    "date": "2026-02-19",
+    "description": "Staff Salary - 2 employees",
+    "amount": 24241,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400819696"
+  },
+  {
+    "date": "2026-02-21",
+    "description": "Inventory Restock - Laptops",
+    "amount": 38816,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400229630"
+  },
+  {
+    "date": "2026-02-24",
+    "description": "Staff Salary - 2 employees",
+    "amount": 25836,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400535982"
+  },
+  {
+    "date": "2026-02-25",
+    "description": "Accounting Software",
+    "amount": 2795,
+    "type": "expense",
+    "category": "Software",
+    "id": "1774389834400766588"
+  },
+  {
+    "date": "2026-02-27",
+    "description": "Shop Rent - February",
+    "amount": 12823,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400201206"
+  },
+  {
+    "date": "2026-03-05",
+    "description": "Shop Rent - March",
+    "amount": 13506,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400499173"
+  },
+  {
+    "date": "2026-03-05",
+    "description": "Staff Salary - 2 employees",
+    "amount": 27737,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400865331"
+  },
+  {
+    "date": "2026-03-07",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 18277,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400511514"
+  },
+  {
+    "date": "2026-03-07",
+    "description": "Electricity & Internet Bill",
+    "amount": 6036,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400601285"
+  },
+  {
+    "date": "2026-03-07",
+    "description": "Shop Rent - February",
+    "amount": 14597,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400992914"
+  },
+  {
+    "date": "2026-03-11",
+    "description": "Online Sales - Flipkart payout",
+    "amount": 36913,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400606144"
+  },
+  {
+    "date": "2026-03-14",
+    "description": "Inventory Restock - Laptops",
+    "amount": 33641,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400267725"
+  },
+  {
+    "date": "2026-03-16",
+    "description": "Electricity & Internet Bill",
+    "amount": 5189,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400972714"
+  },
+  {
+    "date": "2026-03-16",
+    "description": "Inventory Restock - Mobile accessories",
+    "amount": 23827,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400201519"
+  },
+  {
+    "date": "2026-03-16",
+    "description": "Shop Rent - March",
+    "amount": 17053,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400732225"
+  },
+  {
+    "date": "2026-03-17",
+    "description": "New Display Rack",
+    "amount": 8140,
+    "type": "expense",
+    "category": "Equipment",
+    "id": "1774389834400021008"
+  },
+  {
+    "date": "2026-03-18",
+    "description": "Google Ads Campaign",
+    "amount": 5940,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400731656"
+  },
+  {
+    "date": "2026-03-18",
+    "description": "Electricity & Internet Bill",
+    "amount": 5382,
+    "type": "expense",
+    "category": "Utilities",
+    "id": "1774389834400697008"
+  },
+  {
+    "date": "2026-03-18",
+    "description": "Shop Rent - February",
+    "amount": 15196,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400631958"
+  },
+  {
+    "date": "2026-03-20",
+    "description": "Shop Rent - February",
+    "amount": 16210,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400932759"
+  },
+  {
+    "date": "2026-03-20",
+    "description": "Shop Rent - February",
+    "amount": 14388,
+    "type": "expense",
+    "category": "Rent",
+    "id": "1774389834400258901"
+  },
+  {
+    "date": "2026-03-21",
+    "description": "Wholesale Purchase",
+    "amount": 17307,
+    "type": "expense",
+    "category": "Inventory",
+    "id": "1774389834400794282"
+  },
+  {
+    "date": "2026-03-21",
+    "description": "Staff Salary - 2 employees",
+    "amount": 31107,
+    "type": "expense",
+    "category": "Salaries",
+    "id": "1774389834400150310"
+  },
+  {
+    "date": "2026-03-21",
+    "description": "Google Ads Campaign",
+    "amount": 5227,
+    "type": "expense",
+    "category": "Marketing",
+    "id": "1774389834400163122"
+  },
+  {
+    "date": "2026-03-24",
+    "description": "Product Sales - In-store",
+    "amount": 63577,
+    "type": "income",
+    "category": "Sales",
+    "id": "1774389834400932980"
+  },
+  {
+    "date": "2026-03-25",
+    "description": "New Display Rack",
+    "amount": 6985,
+    "type": "expense",
+    "category": "Equipment",
+    "id": "1774389834400060469"
+  }
+]
