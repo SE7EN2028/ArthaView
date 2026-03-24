@@ -80,12 +80,18 @@ export default function Upload() {
     }
   };
 
-  const downloadSample = () => {
-    const blob = new Blob([SAMPLE_CSV], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a'); a.href = url; a.download = 'arthaview_sample.csv';
-    a.click(); URL.revokeObjectURL(url);
-  };
+  const downloadSample = (typeId) => {
+    if (!typeId) return;
+    
+    let csv = 'Date,Description,Amount,Type,Category\n';
+    
+    const configs = {
+      ecommerce: { inc: ['Product Sales', 'Shipping Revenue'], exp: ['Inventory', 'Ads', 'Hosting', 'Shipping'] },
+      freelance: { inc: ['Consulting', 'Development', 'Design'], exp: ['Software', 'Internet', 'Marketing', 'Hardware'] },
+      retail:    { inc: ['Store Sales', 'Bulk Orders'], exp: ['Rent', 'Utilities', 'Inventory', 'Salaries'] },
+      agency:    { inc: ['Retainer', 'Project Fee'], exp: ['Salaries', 'Software', 'Rent', 'Ads'] },
+      manufacturing: { inc: ['Wholesale', 'Export'], exp: ['Raw Materials', 'Machinery', 'Labor', 'Logistics'] }
+    };
     
     const cfg = configs[typeId] || configs.ecommerce;
     const start = new Date(); start.setMonth(start.getMonth() - 7);
