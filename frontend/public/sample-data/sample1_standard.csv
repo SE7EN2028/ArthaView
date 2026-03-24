@@ -1,0 +1,161 @@
+Date,Description,Amount,Type,Category
+2025-09-02,Electricity & Internet Bill,5568,expense,Utilities
+2025-09-04,Amazon Seller Payout,38512,income,Sales
+2025-09-04,Wholesale Purchase,17260,expense,Inventory
+2025-09-05,Online Sales - Meesho payout,30738,income,Sales
+2025-09-05,Online Sales - Meesho payout,32230,income,Sales
+2025-09-06,Electricity & Internet Bill,5665,expense,Utilities
+2025-09-06,Product Sales - In-store,50907,income,Sales
+2025-09-08,Shop Rent - January,14102,expense,Rent
+2025-09-09,Bulk Order - Corporate client,93898,income,Sales
+2025-09-10,Product Sales - In-store,65106,income,Sales
+2025-09-10,Google Ads Campaign,6847,expense,Marketing
+2025-09-10,Staff Salary - 2 employees,24034,expense,Salaries
+2025-09-12,Bulk Order - Corporate client,89853,income,Sales
+2025-09-12,Staff Salary - 2 employees,26681,expense,Salaries
+2025-09-13,Shop Rent - January,16310,expense,Rent
+2025-09-18,Amazon Seller Payout,36849,income,Sales
+2025-09-20,Shop Rent - March,13598,expense,Rent
+2025-09-20,Online Sales - Flipkart payout,30082,income,Sales
+2025-09-22,Electricity & Internet Bill,6053,expense,Utilities
+2025-09-23,Accounting Software,2684,expense,Software
+2025-09-23,Amazon Seller Payout,38716,income,Sales
+2025-09-24,Shop Rent - March,16556,expense,Rent
+2025-09-26,Electricity & Internet Bill,4823,expense,Utilities
+2025-09-28,Electricity & Internet Bill,5271,expense,Utilities
+2025-09-28,Accounting Software,2560,expense,Software
+2025-09-30,Staff Salary - 2 employees,30102,expense,Salaries
+2025-09-30,Online Sales - Meesho payout,27186,income,Sales
+2025-10-01,Online Sales - Meesho payout,28824,income,Sales
+2025-10-03,Shop Rent - February,13158,expense,Rent
+2025-10-05,Product Sales - Electronics,63464,income,Sales
+2025-10-06,Inventory Restock - Laptops,38820,expense,Inventory
+2025-10-07,Electricity & Internet Bill,5130,expense,Utilities
+2025-10-07,Shop Rent - February,13930,expense,Rent
+2025-10-10,Product Sales - Electronics,54979,income,Sales
+2025-10-13,Shop Rent - January,14102,expense,Rent
+2025-10-13,Staff Salary - 2 employees,30438,expense,Salaries
+2025-10-13,Product Sales - In-store,62170,income,Sales
+2025-10-16,Online Sales - Meesho payout,28692,income,Sales
+2025-10-17,Wholesale Purchase,20069,expense,Inventory
+2025-10-19,Electricity & Internet Bill,4849,expense,Utilities
+2025-10-20,Bulk Order - Corporate client,94350,income,Sales
+2025-10-24,Inventory Restock - Mobile accessories,18350,expense,Inventory
+2025-10-24,Online Sales - Flipkart payout,30885,income,Sales
+2025-10-24,Electricity & Internet Bill,5259,expense,Utilities
+2025-10-24,Staff Salary - 2 employees,27424,expense,Salaries
+2025-10-25,Electricity & Internet Bill,4804,expense,Utilities
+2025-10-26,Shop Rent - March,16257,expense,Rent
+2025-10-27,Shop Rent - January,14525,expense,Rent
+2025-10-28,Google Ads Campaign,5308,expense,Marketing
+2025-10-29,Staff Salary - 2 employees,29416,expense,Salaries
+2025-10-30,Shop Rent - January,13747,expense,Rent
+2025-11-01,Wholesale Purchase,17297,expense,Inventory
+2025-11-03,New Display Rack,6936,expense,Equipment
+2025-11-03,Electricity & Internet Bill,5426,expense,Utilities
+2025-11-06,Bulk Order - Corporate client,92883,income,Sales
+2025-11-06,New Display Rack,7304,expense,Equipment
+2025-11-07,Shop Rent - February,15781,expense,Rent
+2025-11-08,Staff Salary - 2 employees,24503,expense,Salaries
+2025-11-11,Electricity & Internet Bill,5114,expense,Utilities
+2025-11-13,Inventory Restock - Mobile accessories,19042,expense,Inventory
+2025-11-14,Product Sales - In-store,49903,income,Sales
+2025-11-15,Shop Rent - January,15856,expense,Rent
+2025-11-18,Accounting Software,2673,expense,Software
+2025-11-19,Staff Salary - 2 employees,27047,expense,Salaries
+2025-11-21,Staff Salary - 2 employees,26452,expense,Salaries
+2025-11-26,Staff Salary - 2 employees,24136,expense,Salaries
+2025-11-29,Product Sales - In-store,59265,income,Sales
+2025-11-29,Wholesale Purchase,17401,expense,Inventory
+2025-11-30,Electricity & Internet Bill,4268,expense,Utilities
+2025-11-30,Bulk Order - Corporate client,90767,income,Sales
+2025-12-01,Accounting Software,2546,expense,Software
+2025-12-01,Shop Rent - February,13234,expense,Rent
+2025-12-01,Online Sales - Meesho payout,25062,income,Sales
+2025-12-01,Product Sales - In-store,66171,income,Sales
+2025-12-01,Staff Salary - 2 employees,31554,expense,Salaries
+2025-12-02,Shop Rent - January,16682,expense,Rent
+2025-12-07,Product Sales - In-store,53798,income,Sales
+2025-12-08,Wholesale Purchase,16419,expense,Inventory
+2025-12-10,Electricity & Internet Bill,5519,expense,Utilities
+2025-12-11,Wholesale Purchase,15246,expense,Inventory
+2025-12-15,Staff Salary - 2 employees,30138,expense,Salaries
+2025-12-19,Google Ads Campaign,6847,expense,Marketing
+2025-12-19,Bulk Order - Corporate client,88705,income,Sales
+2025-12-19,Shop Rent - March,14353,expense,Rent
+2025-12-20,Electricity & Internet Bill,4579,expense,Utilities
+2025-12-23,Wholesale Purchase,15509,expense,Inventory
+2025-12-24,Inventory Restock - Mobile accessories,20116,expense,Inventory
+2025-12-24,Online Sales - Flipkart payout,31795,income,Sales
+2025-12-24,New Display Rack,7053,expense,Equipment
+2025-12-25,Google Ads Campaign,6486,expense,Marketing
+2025-12-26,Shop Rent - March,13306,expense,Rent
+2025-12-27,Wholesale Purchase,16255,expense,Inventory
+2025-12-28,Amazon Seller Payout,36286,income,Sales
+2025-12-28,Amazon Seller Payout,36635,income,Sales
+2026-01-01,Electricity & Internet Bill,5601,expense,Utilities
+2026-01-01,Bulk Order - Corporate client,79747,income,Sales
+2026-01-02,Shop Rent - March,16011,expense,Rent
+2026-01-03,Wholesale Purchase,18734,expense,Inventory
+2026-01-05,Google Ads Campaign,5582,expense,Marketing
+2026-01-05,Inventory Restock - Laptops,31810,expense,Inventory
+2026-01-06,Electricity & Internet Bill,5717,expense,Utilities
+2026-01-08,Product Sales - In-store,65121,income,Sales
+2026-01-09,Google Ads Campaign,5589,expense,Marketing
+2026-01-09,Inventory Restock - Mobile accessories,20019,expense,Inventory
+2026-01-10,Shop Rent - March,14959,expense,Rent
+2026-01-10,Shop Rent - March,13294,expense,Rent
+2026-01-11,Product Sales - In-store,68585,income,Sales
+2026-01-12,Inventory Restock - Laptops,30743,expense,Inventory
+2026-01-13,Accounting Software,2521,expense,Software
+2026-01-14,Amazon Seller Payout,41645,income,Sales
+2026-01-15,Accounting Software,2189,expense,Software
+2026-01-16,Amazon Seller Payout,42403,income,Sales
+2026-01-19,Staff Salary - 2 employees,27047,expense,Salaries
+2026-01-21,Amazon Seller Payout,44550,income,Sales
+2026-01-22,Electricity & Internet Bill,5309,expense,Utilities
+2026-01-24,Product Sales - In-store,77931,income,Sales
+2026-01-27,Shop Rent - February,13931,expense,Rent
+2026-01-27,Online Sales - Meesho payout,32790,income,Sales
+2026-01-29,Online Sales - Flipkart payout,31007,income,Sales
+2026-01-30,Product Sales - Electronics,70016,income,Sales
+2026-01-30,Inventory Restock - Mobile accessories,20362,expense,Inventory
+2026-01-31,Shop Rent - January,13771,expense,Rent
+2026-02-01,New Display Rack,7126,expense,Equipment
+2026-02-02,Inventory Restock - Mobile accessories,23013,expense,Inventory
+2026-02-04,Shop Rent - February,16740,expense,Rent
+2026-02-06,Electricity & Internet Bill,6321,expense,Utilities
+2026-02-06,Electricity & Internet Bill,5762,expense,Utilities
+2026-02-07,Staff Salary - 2 employees,27423,expense,Salaries
+2026-02-09,Google Ads Campaign,6237,expense,Marketing
+2026-02-11,Online Sales - Flipkart payout,29401,income,Sales
+2026-02-14,Product Sales - In-store,65878,income,Sales
+2026-02-15,Inventory Restock - Mobile accessories,22470,expense,Inventory
+2026-02-17,Bulk Order - Corporate client,72846,income,Sales
+2026-02-19,Product Sales - Electronics,59372,income,Sales
+2026-02-19,Staff Salary - 2 employees,24241,expense,Salaries
+2026-02-21,Inventory Restock - Laptops,38816,expense,Inventory
+2026-02-24,Staff Salary - 2 employees,25836,expense,Salaries
+2026-02-25,Accounting Software,2795,expense,Software
+2026-02-27,Shop Rent - February,12823,expense,Rent
+2026-03-05,Shop Rent - March,13506,expense,Rent
+2026-03-05,Staff Salary - 2 employees,27737,expense,Salaries
+2026-03-07,Inventory Restock - Mobile accessories,18277,expense,Inventory
+2026-03-07,Electricity & Internet Bill,6036,expense,Utilities
+2026-03-07,Shop Rent - February,14597,expense,Rent
+2026-03-11,Online Sales - Flipkart payout,36913,income,Sales
+2026-03-14,Inventory Restock - Laptops,33641,expense,Inventory
+2026-03-16,Electricity & Internet Bill,5189,expense,Utilities
+2026-03-16,Inventory Restock - Mobile accessories,23827,expense,Inventory
+2026-03-16,Shop Rent - March,17053,expense,Rent
+2026-03-17,New Display Rack,8140,expense,Equipment
+2026-03-18,Google Ads Campaign,5940,expense,Marketing
+2026-03-18,Electricity & Internet Bill,5382,expense,Utilities
+2026-03-18,Shop Rent - February,15196,expense,Rent
+2026-03-20,Shop Rent - February,16210,expense,Rent
+2026-03-20,Shop Rent - February,14388,expense,Rent
+2026-03-21,Wholesale Purchase,17307,expense,Inventory
+2026-03-21,Staff Salary - 2 employees,31107,expense,Salaries
+2026-03-21,Google Ads Campaign,5227,expense,Marketing
+2026-03-24,Product Sales - In-store,63577,income,Sales
+2026-03-25,New Display Rack,6985,expense,Equipment
