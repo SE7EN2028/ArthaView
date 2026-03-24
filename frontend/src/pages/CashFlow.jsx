@@ -148,6 +148,7 @@ export default function CashFlow() {
                 <th>Revenue</th>
                 <th>Expenses</th>
                 <th>Cash Flow</th>
+                <th>MoM Change</th>
                 <th>Status</th>
               </tr>
             </thead>
@@ -159,6 +160,13 @@ export default function CashFlow() {
                   <td style={{ color: 'var(--accent-red)' }}>{fmt(row.expenses)}</td>
                   <td style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: row.cashFlow >= 0 ? 'var(--accent-green)' : 'var(--accent-red)' }}>
                     {row.cashFlow >= 0 ? '+' : ''}{fmt(row.cashFlow)}
+                  </td>
+                  <td>
+                    {i > 0 && trend[i-1].cashFlow !== 0 ? (
+                      <span className={row.cashFlow > trend[i-1].cashFlow ? 'badge badge-green' : 'badge badge-red'}>
+                        {row.cashFlow > trend[i-1].cashFlow ? '↑' : '↓'} {Math.abs(((row.cashFlow - trend[i-1].cashFlow) / Math.abs(trend[i-1].cashFlow)) * 100).toFixed(1)}%
+                      </span>
+                    ) : <span className="text-muted">-</span>}
                   </td>
                   <td>
                     <span className={`badge ${row.cashFlow >= 0 ? 'badge-green' : 'badge-red'}`}>
