@@ -17,6 +17,9 @@ export const updateTransaction = (id, data) =>
 export const deleteTransaction = (id) =>
   api.delete(`/transactions/${id}`).then(r => r.data);
 
+export const clearAllTransactions = () =>
+  api.delete(`/transactions`).then(r => r.data);
+
 export const getSummary = () =>
   api.get('/analytics/summary').then(r => r.data);
 
