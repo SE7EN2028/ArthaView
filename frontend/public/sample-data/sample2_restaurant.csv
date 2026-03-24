@@ -1,0 +1,161 @@
+Date,Description,Amount,Type,Category
+2025-09-02,Dine-in Revenue - New Year,47476,income,Sales
+2025-09-02,Restaurant Rent,18383,expense,Rent
+2025-09-03,Gas & Electricity Bill,10628,expense,Utilities
+2025-09-05,Restaurant Rent,22691,expense,Rent
+2025-09-08,Food Delivery Apps Payout,43288,income,Sales
+2025-09-08,Dine-in Revenue - New Year,48886,income,Sales
+2025-09-09,Dine-in Revenue - March Week 1,44912,income,Sales
+2025-09-10,Gas & Electricity Bill,7261,expense,Utilities
+2025-09-11,Catering Order - Corporate Event,56440,income,Services
+2025-09-12,New Kitchen Equipment - Fryer,21422,expense,Equipment
+2025-09-13,Raw Material Purchase,17590,expense,Inventory
+2025-09-14,Dine-in Revenue - March Week 1,50566,income,Sales
+2025-09-15,Chef & Staff Salaries,31578,expense,Salaries
+2025-09-17,Food Delivery Apps Payout,40509,income,Sales
+2025-09-17,Instagram Ad Campaign,3998,expense,Marketing
+2025-09-20,Raw Material Purchase,18172,expense,Inventory
+2025-09-21,Bulk Catering Order - Wedding,83746,income,Services
+2025-09-21,Raw Material Purchase,14385,expense,Inventory
+2025-09-22,Valentine Day Special Revenue,68275,income,Sales
+2025-09-27,Gas & Electricity Bill,8856,expense,Utilities
+2025-09-28,Raw Material Purchase - Vegetables & Spices,10716,expense,Inventory
+2025-09-28,Gas & Electricity Bill,9932,expense,Utilities
+2025-09-28,Restaurant Rent,19303,expense,Rent
+2025-09-29,Chef & Staff Salaries,32510,expense,Salaries
+2025-09-29,Zomato Delivery Payout,24694,income,Sales
+2025-10-01,Chef & Staff Salaries,31685,expense,Salaries
+2025-10-03,Raw Material Purchase,18079,expense,Inventory
+2025-10-04,Swiggy Delivery Payout,17342,income,Sales
+2025-10-07,Raw Material Purchase,18804,expense,Inventory
+2025-10-07,Gas & Electricity Bill,7005,expense,Utilities
+2025-10-10,Food Delivery Apps Payout,44620,income,Sales
+2025-10-10,Gas & Electricity Bill,8736,expense,Utilities
+2025-10-11,Chef & Staff Salaries,31083,expense,Salaries
+2025-10-11,Catering Order - Corporate Event,61945,income,Services
+2025-10-12,Raw Material Purchase - Vegetables & Spices,12742,expense,Inventory
+2025-10-14,Zomato Delivery Payout,21545,income,Sales
+2025-10-15,Restaurant Rent,21203,expense,Rent
+2025-10-16,Chef & Staff Salaries,37330,expense,Salaries
+2025-10-18,Restaurant Rent,18503,expense,Rent
+2025-10-21,Raw Material Purchase,16825,expense,Inventory
+2025-10-25,Chef & Staff Salaries,31403,expense,Salaries
+2025-10-28,Restaurant Rent,17343,expense,Rent
+2025-10-28,Restaurant Rent,20314,expense,Rent
+2025-10-31,Raw Material Purchase,19699,expense,Inventory
+2025-11-03,Restaurant Rent,21322,expense,Rent
+2025-11-04,Valentine Day Special Revenue,64582,income,Sales
+2025-11-05,Chef & Staff Salaries,31533,expense,Salaries
+2025-11-07,Raw Material Purchase - Meat & Dairy,14678,expense,Inventory
+2025-11-09,Gas & Electricity Bill,9525,expense,Utilities
+2025-11-09,Raw Material Purchase - Meat & Dairy,14968,expense,Inventory
+2025-11-10,Raw Material Purchase,18750,expense,Inventory
+2025-11-13,Dine-in Revenue - New Year,51388,income,Sales
+2025-11-15,Packaging Material,3257,expense,Inventory
+2025-11-16,Raw Material Purchase,15676,expense,Inventory
+2025-11-16,Chef & Staff Salaries,32037,expense,Salaries
+2025-11-17,Raw Material Purchase - Meat & Dairy,14259,expense,Inventory
+2025-11-18,Raw Material Purchase - Meat & Dairy,13052,expense,Inventory
+2025-11-19,New Kitchen Equipment - Fryer,27042,expense,Equipment
+2025-11-20,New Kitchen Equipment - Fryer,26365,expense,Equipment
+2025-11-22,Restaurant Rent,20344,expense,Rent
+2025-11-23,Dine-in Revenue - March Week 1,38277,income,Sales
+2025-11-24,Dine-in Revenue - February Week 1,40157,income,Sales
+2025-11-26,Packaging Material,3694,expense,Inventory
+2025-11-26,Packaging Material,3868,expense,Inventory
+2025-11-28,Chef & Staff Salaries,34738,expense,Salaries
+2025-11-28,Chef & Staff Salaries,36904,expense,Salaries
+2025-11-28,Raw Material Purchase - Vegetables & Spices,11166,expense,Inventory
+2025-12-01,New Kitchen Equipment - Fryer,25980,expense,Equipment
+2025-12-03,Instagram Ad Campaign,3961,expense,Marketing
+2025-12-05,Restaurant Rent,17460,expense,Rent
+2025-12-06,Zomato Delivery Payout,23489,income,Sales
+2025-12-06,Gas & Electricity Bill,10831,expense,Utilities
+2025-12-07,Chef & Staff Salaries,30965,expense,Salaries
+2025-12-08,Swiggy Delivery Payout,16971,income,Sales
+2025-12-08,Restaurant Rent,22830,expense,Rent
+2025-12-09,Restaurant Rent,18074,expense,Rent
+2025-12-12,Gas & Electricity Bill,8175,expense,Utilities
+2025-12-12,Gas & Electricity Bill,10116,expense,Utilities
+2025-12-13,Restaurant Rent,21507,expense,Rent
+2025-12-13,Zomato Delivery Payout,22069,income,Sales
+2025-12-15,Dine-in Revenue - New Year,42778,income,Sales
+2025-12-18,Restaurant Rent,22893,expense,Rent
+2025-12-21,Raw Material Purchase,15714,expense,Inventory
+2025-12-21,Raw Material Purchase - Vegetables & Spices,13549,expense,Inventory
+2025-12-23,Gas & Electricity Bill,7545,expense,Utilities
+2025-12-26,Swiggy Delivery Payout,19701,income,Sales
+2025-12-28,Raw Material Purchase,18845,expense,Inventory
+2025-12-28,Raw Material Purchase - Vegetables & Spices,12071,expense,Inventory
+2025-12-28,Catering Order - Corporate Event,51676,income,Services
+2025-12-29,Chef & Staff Salaries,30280,expense,Salaries
+2025-12-31,Raw Material Purchase,16554,expense,Inventory
+2025-12-31,Bulk Catering Order - Wedding,81487,income,Services
+2026-01-01,Raw Material Purchase - Meat & Dairy,16079,expense,Inventory
+2026-01-01,Food Delivery Apps Payout,41736,income,Sales
+2026-01-03,Dine-in Revenue - March Week 1,48578,income,Sales
+2026-01-03,Dine-in Revenue - February Week 1,44037,income,Sales
+2026-01-03,Chef & Staff Salaries,35534,expense,Salaries
+2026-01-04,New Kitchen Equipment - Fryer,22913,expense,Equipment
+2026-01-07,Chef & Staff Salaries,34971,expense,Salaries
+2026-01-08,Raw Material Purchase,20692,expense,Inventory
+2026-01-09,New Kitchen Equipment - Fryer,22967,expense,Equipment
+2026-01-10,Chef & Staff Salaries,36288,expense,Salaries
+2026-01-11,Raw Material Purchase,13835,expense,Inventory
+2026-01-17,Raw Material Purchase - Meat & Dairy,16173,expense,Inventory
+2026-01-19,Chef & Staff Salaries,35624,expense,Salaries
+2026-01-21,Gas & Electricity Bill,8125,expense,Utilities
+2026-01-21,Chef & Staff Salaries,40113,expense,Salaries
+2026-01-21,Packaging Material,3238,expense,Inventory
+2026-01-22,Bulk Catering Order - Wedding,85149,income,Services
+2026-01-23,Gas & Electricity Bill,10637,expense,Utilities
+2026-01-26,Zomato + Swiggy Combined Payout,32977,income,Sales
+2026-01-26,Chef & Staff Salaries,31490,expense,Salaries
+2026-01-27,New Kitchen Equipment - Fryer,23029,expense,Equipment
+2026-01-27,Instagram Ad Campaign,3817,expense,Marketing
+2026-01-29,Gas & Electricity Bill,8928,expense,Utilities
+2026-01-29,Raw Material Purchase,16685,expense,Inventory
+2026-01-30,Catering Order - Corporate Event,51556,income,Services
+2026-01-30,Restaurant Rent,22075,expense,Rent
+2026-02-02,Gas & Electricity Bill,9135,expense,Utilities
+2026-02-06,Raw Material Purchase,18160,expense,Inventory
+2026-02-08,Chef & Staff Salaries,31245,expense,Salaries
+2026-02-08,Food Delivery Apps Payout,47141,income,Sales
+2026-02-08,Packaging Material,3450,expense,Inventory
+2026-02-12,Chef & Staff Salaries,34604,expense,Salaries
+2026-02-14,Chef & Staff Salaries,35644,expense,Salaries
+2026-02-16,Packaging Material,3239,expense,Inventory
+2026-02-17,Dine-in Revenue - New Year,45502,income,Sales
+2026-02-17,New Kitchen Equipment - Fryer,22455,expense,Equipment
+2026-02-21,Raw Material Purchase,18770,expense,Inventory
+2026-02-22,Raw Material Purchase - Meat & Dairy,17235,expense,Inventory
+2026-02-22,Zomato + Swiggy Combined Payout,35392,income,Sales
+2026-02-23,Gas & Electricity Bill,9185,expense,Utilities
+2026-02-23,Zomato + Swiggy Combined Payout,33076,income,Sales
+2026-02-23,Raw Material Purchase,14509,expense,Inventory
+2026-02-25,Raw Material Purchase - Meat & Dairy,16167,expense,Inventory
+2026-02-25,Raw Material Purchase - Vegetables & Spices,13548,expense,Inventory
+2026-02-25,Raw Material Purchase - Meat & Dairy,13929,expense,Inventory
+2026-02-26,Zomato + Swiggy Combined Payout,36689,income,Sales
+2026-02-28,Dine-in Revenue - February Week 1,46279,income,Sales
+2026-03-01,Restaurant Rent,18105,expense,Rent
+2026-03-04,Zomato Delivery Payout,25241,income,Sales
+2026-03-06,Valentine Day Special Revenue,54832,income,Sales
+2026-03-07,Chef & Staff Salaries,30497,expense,Salaries
+2026-03-08,Gas & Electricity Bill,7628,expense,Utilities
+2026-03-10,Dine-in Revenue - New Year,42862,income,Sales
+2026-03-11,Gas & Electricity Bill,8379,expense,Utilities
+2026-03-11,Restaurant Rent,17512,expense,Rent
+2026-03-11,Restaurant Rent,21324,expense,Rent
+2026-03-12,Gas & Electricity Bill,7813,expense,Utilities
+2026-03-12,Zomato + Swiggy Combined Payout,42302,income,Sales
+2026-03-12,Gas & Electricity Bill,7757,expense,Utilities
+2026-03-13,Restaurant Rent,22841,expense,Rent
+2026-03-13,Chef & Staff Salaries,39106,expense,Salaries
+2026-03-14,Instagram Ad Campaign,3836,expense,Marketing
+2026-03-18,Chef & Staff Salaries,30632,expense,Salaries
+2026-03-20,Chef & Staff Salaries,38352,expense,Salaries
+2026-03-20,Zomato Delivery Payout,21050,income,Sales
+2026-03-24,Raw Material Purchase - Vegetables & Spices,13082,expense,Inventory
+2026-03-25,Chef & Staff Salaries,32062,expense,Salaries
+2026-03-25,Gas & Electricity Bill,8462,expense,Utilities
