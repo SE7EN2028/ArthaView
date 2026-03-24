@@ -11,17 +11,22 @@ export default function CashFlow() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getTrend().then(r => {
-      const data = r.data.map(m => ({
-        ...m,
-        cashFlow: m.income - m.expenses,
-        cumulative: 0,
-      }));
-      // Calculate cumulative cash flow
-      let cum = 0;
-      data.forEach(d => { cum += d.cashFlow; d.cumulative = cum; });
-      setTrend(data);
-    }).finally(() => setLoading(false));
+    getTrend()
+      .then(r => {
+        const data = (r?.data || []).map(m => ({
+          ...m,
+          cashFlow: (m.income || 0) - (m.expenses || 0),
+          cumulative: 0,
+        }));
+        // Calculate cumulative cash flow
+        let cum = 0;
+        data.forEach(d => { cum += d.cashFlow; d.cumulative = cum; });
+        setTrend(data);
+      })
+      .catch(err => {
+        console.error("Failed to fetch trend:", err);
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   const currentCF = trend[trend.length - 1]?.cashFlow || 0;
@@ -175,7 +180,7 @@ export default function CashFlow() {
                   </td>
                 </tr>
               ))}
-            </tbody>
+</tbody>
           </table>
         </div>
 
