@@ -76,17 +76,22 @@ loadData();
 
 export const getTransactions = () => transactions;
 
-export const clearTransactions = () => { transactions = []; };
+export const clearTransactions = () => { 
+  transactions = []; 
+  saveData(); 
+};
 
 export const addTransaction = (txn) => {
-  const newTxn = { ...txn, id: Date.now().toString() };
+  const newTxn = { ...txn, id: Date.now().toString() + Math.random().toString().slice(2,8) };
   transactions.push(newTxn);
+  saveData();
   return newTxn;
 };
 
 export const addTransactions = (txns) => {
-  const newTxns = txns.map(t => ({ ...t, id: Date.now().toString() + Math.random() }));
+  const newTxns = txns.map(t => ({ ...t, id: Date.now().toString() + Math.random().toString().slice(2,8) }));
   transactions = [...transactions, ...newTxns];
+  saveData();
   return newTxns;
 };
 
@@ -94,6 +99,7 @@ export const deleteTransaction = (id) => {
   const idx = transactions.findIndex(t => t.id === id);
   if (idx === -1) return false;
   transactions.splice(idx, 1);
+  saveData();
   return true;
 };
 
@@ -101,5 +107,6 @@ export const updateTransaction = (id, updates) => {
   const idx = transactions.findIndex(t => t.id === id);
   if (idx === -1) return null;
   transactions[idx] = { ...transactions[idx], ...updates };
+  saveData();
   return transactions[idx];
 };
