@@ -1,6 +1,6 @@
 .insights-layout {
   display: grid;
-  grid-template-columns: 1fr 380px;
+  grid-template-columns: 1fr 420px;
   gap: 20px;
   align-items: start;
 }
@@ -9,7 +9,8 @@
 .chat-panel {
   display: flex;
   flex-direction: column;
-  height: 78vh;
+  height: calc(100vh - 300px);
+  min-height: 550px;
   padding: 0;
   overflow: hidden;
 }
@@ -225,16 +226,28 @@
 
 .insights-card { min-height: 120px; }
 
-.quick-insights-text { display: flex; flex-direction: column; gap: 10px; }
+.quick-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.banner-insight {
+  border: 1px solid rgba(124,111,247,0.15);
+  background: rgba(124,111,247,0.03);
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  transition: all 0.2s;
+}
+.banner-insight:hover {
+  background: rgba(124,111,247,0.08);
+  transform: translateY(-2px);
+}
 
 .insight-line {
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  padding: 8px 12px;
-  background: rgba(124,111,247,0.06);
-  border-left: 3px solid var(--accent-primary);
-  border-radius: 0 6px 6px 0;
+  font-size: 14px;
+  color: var(--text-primary);
 }
 
 .anomalies-list { display: flex; flex-direction: column; gap: 10px; }

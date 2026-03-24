@@ -40,7 +40,7 @@ export default function Insights() {
   }, []);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }, [messages]);
 
   const sendMessage = async (text) => {
@@ -69,6 +69,27 @@ export default function Insights() {
     <div>
       <Header title="AI Insights" subtitle="Powered by Groq · LLaMA 3" />
       <div className="page-content animate-in">
+
+        {/* AI Quick Insights Banner */}
+        <div className="card insights-banner" style={{ marginBottom: 20 }}>
+          <div className="card-heading" style={{ marginBottom: 10, display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontSize: 18 }}>⚡</span> AI Quick Insights
+          </div>
+          {insightsLoading ? (
+            <div style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-muted)', fontSize: 14, padding: '10px 0' }}>
+              <div className="spinner" style={{ width: 22, height: 22 }} /> Analyzing your financial data...
+            </div>
+          ) : (
+            <div className="quick-insights-grid">
+              {quickInsights.split('\n').filter(Boolean).map((line, i) => (
+                <div key={i} className="insight-line banner-insight">
+                  {line}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
         <div className="insights-layout">
 
           {/* LEFT: Chat */}
@@ -103,14 +124,7 @@ export default function Insights() {
               <div ref={bottomRef} />
             </div>
 
-            {/* Suggested Questions */}
-            <div className="suggestions">
-              {SUGGESTED.map((s, i) => (
-                <button key={i} className="suggestion-chip" onClick={() => sendMessage(s)}>
-                  {s}
-                </button>
-              ))}
-            </div>
+
 
             <div className="chat-input-row">
             <div className="chat-input-wrapper">
@@ -133,22 +147,6 @@ export default function Insights() {
 
           {/* RIGHT: Panels */}
           <div className="insights-right">
-
-            {/* AI Quick Insights */}
-            <div className="card insights-card">
-              <div className="card-heading">⚡ AI Quick Insights</div>
-              {insightsLoading ? (
-                <div style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-muted)', fontSize: 13 }}>
-                  <div className="spinner" style={{ width: 20, height: 20 }} /> Analyzing your data...
-                </div>
-              ) : (
-                <div className="quick-insights-text">
-                  {quickInsights.split('\n').filter(Boolean).map((line, i) => (
-                    <div key={i} className="insight-line">{line}</div>
-                  ))}
-                </div>
-              )}
-            </div>
 
             {/* Anomalies */}
             <div className="card">
