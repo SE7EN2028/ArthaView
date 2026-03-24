@@ -1,1 +1,28 @@
 .negative-val { color: var(--accent-red) !important; }
+
+.burn-warning-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.burn-warning-icon { font-size: 22px; line-height: 1; }
+
+.burn-warning-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #f59e0b;
+  margin-bottom: 4px;
+}
+
+.burn-warning-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+

@@ -29,6 +29,7 @@ export default function CashFlow() {
   const avgIncome = trend.length ? trend.reduce((s, t) => s + t.income, 0) / trend.length : 0;
   const avgExpense = trend.length ? trend.reduce((s, t) => s + t.expenses, 0) / trend.length : 0;
   const runway = avgExpense > 0 ? (totalCumulative / avgExpense).toFixed(1) : '∞';
+  const burnWarning = totalCumulative < 0 || (parseFloat(runway) < 3 && runway !== '∞');
 
   const TTip = ({ active, payload, label }) => {
     if (!active || !payload?.length) return null;
@@ -80,6 +81,21 @@ export default function CashFlow() {
             <div className="stat-change positive">▲ Months of expenses</div>
           </div>
         </div>
+
+        {/* Burn Rate Warning */}
+        {burnWarning && (
+          <div className="burn-warning-card">
+            <span className="burn-warning-icon">⚠️</span>
+            <div>
+              <div className="burn-warning-title">Cash Flow Alert</div>
+              <div className="burn-warning-desc">
+                {totalCumulative < 0
+                  ? 'Your cumulative cash position is negative. Immediate action recommended.'
+                  : `Cash runway is only ${runway} months. Review expenses to extend your runway.`}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Cash Flow Chart */}
         <div className="chart-container" style={{ marginBottom: 20 }}>
