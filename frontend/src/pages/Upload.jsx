@@ -83,40 +83,22 @@ export default function Upload() {
   const downloadSample = (typeId) => {
     if (!typeId) return;
     
-    let csv = 'Date,Description,Amount,Type,Category\n';
-    
-    const configs = {
-      ecommerce: { inc: ['Product Sales', 'Shipping Revenue'], exp: ['Inventory', 'Ads', 'Hosting', 'Shipping'] },
-      freelance: { inc: ['Consulting', 'Development', 'Design'], exp: ['Software', 'Internet', 'Marketing', 'Hardware'] },
-      retail:    { inc: ['Store Sales', 'Bulk Orders'], exp: ['Rent', 'Utilities', 'Inventory', 'Salaries'] },
-      agency:    { inc: ['Retainer', 'Project Fee'], exp: ['Salaries', 'Software', 'Rent', 'Ads'] },
-      manufacturing: { inc: ['Wholesale', 'Export'], exp: ['Raw Materials', 'Machinery', 'Labor', 'Logistics'] }
+    const fileMap = {
+      'sample1': '/sample-data/sample1_standard.csv',
+      'sample2': '/sample-data/sample2_restaurant.csv',
+      'sample3': '/sample-data/sample3_freelancer.csv',
+      'sample4': '/sample-data/sample4_hdfc_bank_style.csv',
+      'sample5': '/sample-data/sample5_anomaly_demo.csv'
     };
     
-    const cfg = configs[typeId] || configs.ecommerce;
-    const start = new Date(); start.setMonth(start.getMonth() - 7);
-    const end = new Date();
+    if (!fileMap[typeId]) return;
     
-    const rows = [];
-    for (let i = 0; i < 115; i++) {
-      const d = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
-      const isInc = Math.random() > 0.65;
-      const type = isInc ? 'income' : 'expense';
-      const amount = Math.floor(Math.random() * 80000) + (isInc ? 5000 : 1000);
-      
-      let cat = isInc ? cfg.inc[Math.floor(Math.random() * cfg.inc.length)] : cfg.exp[Math.floor(Math.random() * cfg.exp.length)];
-      let desc = isInc ? `Invoice #${1000+Math.floor(Math.random()*9000)} Payment` : `Vendor Payment - ${cat}`;
-      
-      rows.push({ date: d.toISOString().split('T')[0], desc, amount, type, cat });
-    }
-    
-    rows.sort((a,b) => new Date(a.date) - new Date(b.date));
-    rows.forEach(r => { csv += `${r.date},"${r.desc}",${r.amount},${r.type},${r.cat}\n`; });
-    
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a'); a.href = url; a.download = `arthaview_${typeId}_sample.csv`;
-    a.click(); URL.revokeObjectURL(url);
+    const a = document.createElement('a');
+    a.href = fileMap[typeId];
+    a.download = fileMap[typeId].split('/').pop();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   };
 
   return (
@@ -233,11 +215,11 @@ export default function Upload() {
                   }}
                 >
                   <option value="">⬇ Download Sample Data</option>
-                  <option value="ecommerce">E-Commerce Business</option>
-                  <option value="freelance">Freelance / Independent</option>
-                  <option value="retail">Retail Store</option>
-                  <option value="agency">Service Agency</option>
-                  <option value="manufacturing">Manufacturing Plant</option>
+                  <option value="sample1">Standard Format (E-Commerce/Retail)</option>
+                  <option value="sample2">Restaurant / Cafe</option>
+                  <option value="sample3">Freelancer / Independent</option>
+                  <option value="sample4">HDFC Bank Statement Style</option>
+                  <option value="sample5">Anomaly Demo (Fraud/Duplicates)</option>
                 </select>
               </div>
             </div>
