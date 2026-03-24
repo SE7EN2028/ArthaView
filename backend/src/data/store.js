@@ -6,8 +6,46 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DB_FILE = path.join(__dirname, 'transactions.json');
 
-// In-memory store (simulates DB for hackathon)
 let transactions = [];
+
+const seedData = () => {
+  const generated = [];
+  const start = new Date('2025-09-01').getTime();
+  const end = new Date('2026-03-25').getTime();
+  const expCats = ['Rent', 'Salaries', 'Inventory', 'Marketing', 'Utilities', 'Software'];
+  const incCats = ['Sales', 'Services', 'Consulting'];
+
+  for (let i = 0; i < 115; i++) {
+    const time = start + Math.random() * (end - start);
+    const dateStr = new Date(time).toISOString().split('T')[0];
+    const isIncome = Math.random() > 0.65;
+    const type = isIncome ? 'income' : 'expense';
+    const amount = Math.floor(Math.random() * 80000) + 1500;
+    
+    let category = '';
+    let description = '';
+    
+    if (isIncome) {
+      category = incCats[Math.floor(Math.random() * incCats.length)];
+      description = `Invoice #${1000 + Math.floor(Math.random() * 9000)} Payment`;
+    } else {
+      category = expCats[Math.floor(Math.random() * expCats.length)];
+      description = `Expense - ${category} ${Math.floor(Math.random() * 100)}`;
+    }
+    
+    generated.push({
+      id: Date.now().toString() + i + Math.random().toString().slice(2,8),
+      date: dateStr,
+      description,
+      amount,
+      type,
+      category
+    });
+  }
+  
+  generated.sort((a, b) => new Date(a.date) - new Date(b.date));
+  return generated;
+};
 
 export const getTransactions = () => transactions;
 
