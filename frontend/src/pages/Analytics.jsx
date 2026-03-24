@@ -36,6 +36,10 @@ export default function Analytics() {
   }, []);
 
   const profitData = trend.map(t => ({ ...t, profit: t.income - t.expenses }));
+  const totalIncome = trend.reduce((s, t) => s + t.income, 0);
+  const totalExpenses = trend.reduce((s, t) => s + t.expenses, 0);
+  const netProfit = totalIncome - totalExpenses;
+  const avgMonthly = trend.length ? totalIncome / trend.length : 0;
 
   if (loading) return <div className="page-loading"><div className="spinner" /></div>;
 
@@ -43,6 +47,22 @@ export default function Analytics() {
     <div>
       <Header title="Analytics" subtitle="Deep dive into your financial trends" />
       <div className="page-content animate-in">
+
+        {/* KPI Strip */}
+        <div className="grid-4 mb-28">
+          {[
+            { label: 'Total Revenue', value: fmt(totalIncome), icon: '💰', color: 'rgba(34,211,165,0.1)', border: 'rgba(34,211,165,0.2)' },
+            { label: 'Total Expenses', value: fmt(totalExpenses), icon: '📤', color: 'rgba(247,92,126,0.1)', border: 'rgba(247,92,126,0.2)' },
+            { label: 'Net Profit', value: fmt(netProfit), icon: '📈', color: 'rgba(124,111,247,0.1)', border: 'rgba(124,111,247,0.2)' },
+            { label: 'Avg Monthly Revenue', value: fmt(Math.round(avgMonthly)), icon: '📊', color: 'rgba(56,189,248,0.1)', border: 'rgba(56,189,248,0.2)' },
+          ].map((k, i) => (
+            <div key={i} className="stat-card" style={{ background: k.color, border: `1px solid ${k.border}` }}>
+              <div className="stat-icon" style={{ background: k.color }}>{k.icon}</div>
+              <div className="stat-label">{k.label}</div>
+              <div className="stat-value">{k.value}</div>
+            </div>
+          ))}
+        </div>
 
         {/* Bar Chart */}
         <div className="chart-container" style={{ marginBottom: 20 }}>
