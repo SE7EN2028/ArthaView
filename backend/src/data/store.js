@@ -47,6 +47,33 @@ const seedData = () => {
   return generated;
 };
 
+const loadData = () => {
+  if (fs.existsSync(DB_FILE)) {
+    try {
+      const data = fs.readFileSync(DB_FILE, 'utf8');
+      const parsed = JSON.parse(data);
+      if (parsed.length > 0) {
+        transactions = parsed;
+        return;
+      }
+    } catch (e) {
+      console.error('Error reading DB:', e);
+    }
+  }
+  transactions = seedData();
+  saveData();
+};
+
+const saveData = () => {
+  try {
+    fs.writeFileSync(DB_FILE, JSON.stringify(transactions, null, 2), 'utf8');
+  } catch (e) {
+    console.error('Error saving DB:', e);
+  }
+};
+
+loadData();
+
 export const getTransactions = () => transactions;
 
 export const clearTransactions = () => { transactions = []; };
