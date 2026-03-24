@@ -1,7 +1,8 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "ArthaView Backend API handling transaction storage, PDF parsing, and AI integrations.",
+  "author": "ArthaView Team",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
