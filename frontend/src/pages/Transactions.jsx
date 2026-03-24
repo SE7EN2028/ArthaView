@@ -17,6 +17,8 @@ export default function Transactions() {
   const [submitting, setSubmitting] = useState(false);
   const [filter, setFilter] = useState({ type: '', search: '' });
   const [sort, setSort] = useState({ col: 'date', dir: 'desc' });
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 15;
   const { toast } = useToast();
 
   const load = () => {
@@ -86,6 +88,9 @@ export default function Transactions() {
     a.click();
     URL.revokeObjectURL(url);
   };
+
+  const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+  const paginated = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   return (
     <div>
@@ -216,7 +221,7 @@ export default function Transactions() {
                   </tr>
                 </thead>
                 <tbody>
-                  {sorted.map(t => (
+                  {paginated.map(t => (
                     <tr key={t.id}>
                       <td className="date-cell">{new Date(t.date).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })}</td>
                       <td className="desc-cell">{t.description}</td>
@@ -239,6 +244,15 @@ export default function Transactions() {
             </div>
           )}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="pagination-row">
+            <button className="btn btn-secondary" onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}>← Prev</button>
+            <span className="pagination-info">Page {page} of {totalPages} &middot; {sorted.length} transactions</span>
+            <button className="btn btn-secondary" onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page === totalPages}>Next →</button>
+          </div>
+        )}
 
       </div>
     </div>
