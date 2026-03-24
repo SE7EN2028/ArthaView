@@ -43,28 +43,7 @@ export default function Landing() {
         </div>
       </div>
 
-      {/* Stats Strip */}
-      <div className="stats-strip">
-        <div className="stat-item">
-          <div className="stat-num">500+</div>
-          <div className="stat-desc">SMEs Empowered</div>
-        </div>
-        <div className="stat-divider" />
-        <div className="stat-item">
-          <div className="stat-num">&#8377;10Cr+</div>
-          <div className="stat-desc">Transactions Analyzed</div>
-        </div>
-        <div className="stat-divider" />
-        <div className="stat-item">
-          <div className="stat-num">99.9%</div>
-          <div className="stat-desc">Data Privacy</div>
-        </div>
-        <div className="stat-divider" />
-        <div className="stat-item">
-          <div className="stat-num">0</div>
-          <div className="stat-desc">Bank Links Required</div>
-        </div>
-      </div>
+
 
       {/* Features Grid */}
       <div className="features-grid">
