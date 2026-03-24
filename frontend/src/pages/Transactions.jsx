@@ -68,6 +68,25 @@ export default function Transactions() {
     return 0;
   });
 
+  const exportCSV = () => {
+    const headers = ['Date', 'Description', 'Category', 'Type', 'Amount'];
+    const rows = sorted.map(t => [
+      new Date(t.date).toLocaleDateString('en-IN'),
+      `"${t.description}"`,
+      t.category,
+      t.type,
+      t.amount,
+    ]);
+    const csv = [headers, ...rows].map(r => r.join(',')).join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `arthaview-transactions-${Date.now()}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div>
       <Header title="Transactions" subtitle="Track all your income and expenses" />
@@ -121,6 +140,9 @@ export default function Transactions() {
               <option value="expense">Expense</option>
             </select>
           </div>
+          <button className="btn btn-secondary" onClick={exportCSV} disabled={transactions.length === 0}>
+            📥 Export CSV
+          </button>
           <button className="btn btn-primary" onClick={() => setShowForm(!showForm)}>
             {showForm ? '✕ Cancel' : '+ Add Transaction'}
           </button>
