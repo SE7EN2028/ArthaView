@@ -41,13 +41,15 @@ function DropZone({ fileType, onFile, file, onClear }) {
           </button>
         </div>
       ) : (
-        <div className="dropzone-content">
-          <div className="dropzone-icon">{isDragActive ? '🎯' : cfg.icon}</div>
-          <div className="dropzone-title">
-            {isDragActive ? `Drop ${cfg.label} here!` : `Drag & Drop ${cfg.label}`}
+        <div className={`dropzone-content ${isDragActive ? 'active-pulse' : ''}`}>
+          <div className="dropzone-icon" style={{ transform: isDragActive ? 'scale(1.2)' : 'none', transition: '0.2s' }}>
+            {isDragActive ? '📥' : cfg.icon}
+          </div>
+          <div className="dropzone-title" style={{ color: isDragActive ? cfg.color : '' }}>
+            {isDragActive ? 'Release to upload...' : `Drag & Drop ${cfg.label}`}
           </div>
           <div className="dropzone-sub">{cfg.desc}</div>
-          <div className="dropzone-sub" style={{ marginTop: 6 }}>or click to browse · {cfg.ext.toUpperCase()} only · Max 20MB</div>
+          <div className="dropzone-sub" style={{ marginTop: 6 }}>or click to browse &middot; {cfg.ext.toUpperCase()} only &middot; Max 20MB</div>
         </div>
       )}
     </div>
@@ -90,8 +92,14 @@ export default function Upload() {
 
   return (
     <div>
-      <Header title="Import Data" subtitle="Upload bank statements or CSV exports" />
-      <div className="page-content animate-in">
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Header title="Import Data" subtitle="Upload bank statements or CSV exports" />
+        <div style={{ paddingRight: 32, display: 'flex', gap: 8 }}>
+          <span className="badge badge-purple">PDF</span>
+          <span className="badge badge-green">CSV</span>
+        </div>
+      </div>
+      <div className="page-content animate-in" style={{ paddingTop: 0 }}>
 
         {/* Privacy Notice */}
         <div className="privacy-banner">
