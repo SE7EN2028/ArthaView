@@ -1,0 +1,161 @@
+Date,Description,Amount,Type,Category
+2025-09-02,Mobile App UI Project,64074,income,Services
+2025-09-08,Professional Course - Udemy,2600,expense,Software
+2025-09-08,Laptop SSD Upgrade,7135,expense,Equipment
+2025-09-09,Content Writing Contract,21719,income,Services
+2025-09-13,SEO Audit Project - Client B,31247,income,Services
+2025-09-14,Web Development Project - Client A,82690,income,Services
+2025-09-15,SEO Audit Project - Client B,35027,income,Services
+2025-09-16,Social Media Marketing Consultation,24437,income,Services
+2025-09-16,Web Development Project - Client A,76649,income,Services
+2025-09-18,E-commerce Redesign Project,70827,income,Services
+2025-09-18,Home Office Internet Bill,1575,expense,Utilities
+2025-09-20,Income Tax Advance Payment,19517,expense,Taxes
+2025-09-23,Web Development Project - Client A,73413,income,Services
+2025-09-25,Adobe CC + Notion Subscriptions,5450,expense,Software
+2025-09-28,Professional Course - Udemy,2956,expense,Software
+2025-09-28,Web Development Project - Client A,73581,income,Services
+2025-09-29,SEO Audit Project - Client B,32858,income,Services
+2025-10-01,React App Development - Client C,98831,income,Services
+2025-10-01,SEO Audit Project - Client B,32171,income,Services
+2025-10-03,Software Subscriptions,5323,expense,Software
+2025-10-04,GST Filing Fee - CA,3913,expense,Taxes
+2025-10-04,Social Media Marketing Consultation,27548,income,Services
+2025-10-05,Social Media Marketing Consultation,24198,income,Services
+2025-10-06,Brand Identity Project - Startup B,44699,income,Services
+2025-10-08,Home Office Internet Bill,2032,expense,Utilities
+2025-10-11,E-commerce Redesign Project,73228,income,Services
+2025-10-12,Content Writing Contract,22690,income,Services
+2025-10-12,Logo Design Project - Startup,18034,income,Services
+2025-10-13,Laptop SSD Upgrade,6647,expense,Equipment
+2025-10-13,React App Development - Client C,79004,income,Services
+2025-10-14,Professional Course - Udemy,2788,expense,Software
+2025-10-14,Professional Course - Udemy,2696,expense,Software
+2025-10-15,Income Tax Advance Payment,20495,expense,Taxes
+2025-10-15,E-commerce Redesign Project,71895,income,Services
+2025-10-16,React App Development - Client C,78506,income,Services
+2025-10-18,SEO Audit Project - Client B,34307,income,Services
+2025-10-19,SEO Audit Project - Client B,37504,income,Services
+2025-10-21,Brand Identity Project - Startup B,48351,income,Services
+2025-10-22,External Hard Drive - Backup,4148,expense,Equipment
+2025-10-23,SEO Audit Project - Client B,31033,income,Services
+2025-10-23,Professional Course - Udemy,2880,expense,Software
+2025-10-23,External Hard Drive - Backup,3473,expense,Equipment
+2025-10-23,Social Media Marketing Consultation,26823,income,Services
+2025-10-25,Logo Design Project - Startup,18906,income,Services
+2025-10-26,Adobe Creative Cloud Subscription,3937,expense,Software
+2025-10-27,Mobile App UI Project,67222,income,Services
+2025-10-29,Brand Identity Project - Startup B,43249,income,Services
+2025-10-30,Home Office Internet Bill,1672,expense,Utilities
+2025-10-31,Social Media Marketing Consultation,24781,income,Services
+2025-11-01,Software Subscriptions,4913,expense,Software
+2025-11-01,Home Office Internet Bill,1799,expense,Utilities
+2025-11-02,E-commerce Redesign Project,81331,income,Services
+2025-11-02,Home Office Internet Bill,1530,expense,Utilities
+2025-11-05,Income Tax Advance Payment,20533,expense,Taxes
+2025-11-05,React App Development - Client C,85904,income,Services
+2025-11-06,React App Development - Client C,87992,income,Services
+2025-11-07,Home Office Internet Bill,1761,expense,Utilities
+2025-11-08,Logo Design Project - Startup,17345,income,Services
+2025-11-10,Professional Course - Udemy,2645,expense,Software
+2025-11-12,Home Office Internet Bill,1954,expense,Utilities
+2025-11-12,Income Tax Advance Payment,19968,expense,Taxes
+2025-11-13,React App Development - Client C,102379,income,Services
+2025-11-14,GST Filing Fee - CA,3768,expense,Taxes
+2025-11-15,External Hard Drive - Backup,3832,expense,Equipment
+2025-11-15,E-commerce Redesign Project,76687,income,Services
+2025-11-17,Professional Course - Udemy,2938,expense,Software
+2025-11-17,GST Filing Fee - CA,3840,expense,Taxes
+2025-11-17,Adobe CC + Notion Subscriptions,5108,expense,Software
+2025-11-19,Income Tax Advance Payment,15611,expense,Taxes
+2025-11-19,GitHub Copilot & Tools,1723,expense,Software
+2025-11-20,Adobe Creative Cloud Subscription,3672,expense,Software
+2025-11-21,SEO Audit Project - Client B,30356,income,Services
+2025-11-21,Home Office Internet Bill,1936,expense,Utilities
+2025-11-25,Income Tax Advance Payment,20360,expense,Taxes
+2025-11-26,Professional Course - Udemy,2697,expense,Software
+2025-11-26,Adobe CC + Notion Subscriptions,5698,expense,Software
+2025-11-26,SEO Audit Project - Client B,32939,income,Services
+2025-11-27,Mobile App UI Project,68262,income,Services
+2025-11-28,Adobe Creative Cloud Subscription,4696,expense,Software
+2025-11-29,UX/UI Design Retainer - Client D,44771,income,Services
+2025-11-30,Home Office Internet Bill,1785,expense,Utilities
+2025-11-30,Figma Pro Annual Plan,2685,expense,Software
+2025-12-01,React App Development - Client C,83112,income,Services
+2025-12-02,Professional Course - Udemy,3371,expense,Software
+2025-12-05,Brand Identity Project - Startup B,47488,income,Services
+2025-12-08,Web Development Project - Client A,67246,income,Services
+2025-12-08,Adobe CC + Notion Subscriptions,4451,expense,Software
+2025-12-10,SEO Audit Project - Client B,32603,income,Services
+2025-12-11,SEO Audit Project - Client B,39158,income,Services
+2025-12-13,Professional Course - Udemy,2942,expense,Software
+2025-12-17,Home Office Internet Bill,1849,expense,Utilities
+2025-12-20,Mobile App UI Project,61474,income,Services
+2025-12-22,UX/UI Design Retainer - Client D,41878,income,Services
+2025-12-22,GitHub Copilot & Tools,1809,expense,Software
+2025-12-23,Web Development Project - Client A,75318,income,Services
+2025-12-25,GST Filing Fee - CA,3797,expense,Taxes
+2025-12-30,Laptop SSD Upgrade,5698,expense,Equipment
+2026-01-01,Home Office Internet Bill,1842,expense,Utilities
+2026-01-02,Laptop SSD Upgrade,6642,expense,Equipment
+2026-01-06,React App Development - Client C,80788,income,Services
+2026-01-08,Professional Course - Udemy,2712,expense,Software
+2026-01-08,Social Media Marketing Consultation,27588,income,Services
+2026-01-08,GST Filing Fee - CA,3171,expense,Taxes
+2026-01-08,Social Media Marketing Consultation,28233,income,Services
+2026-01-09,Logo Design Project - Startup,16966,income,Services
+2026-01-10,Adobe CC + Notion Subscriptions,4397,expense,Software
+2026-01-13,Brand Identity Project - Startup B,50272,income,Services
+2026-01-14,Figma Pro Annual Plan,3240,expense,Software
+2026-01-16,Mobile App UI Project,60423,income,Services
+2026-01-17,E-commerce Redesign Project,91673,income,Services
+2026-01-19,E-commerce Redesign Project,88389,income,Services
+2026-01-21,Software Subscriptions,5215,expense,Software
+2026-01-23,E-commerce Redesign Project,78681,income,Services
+2026-01-24,Brand Identity Project - Startup B,39331,income,Services
+2026-01-25,Laptop SSD Upgrade,5702,expense,Equipment
+2026-01-27,SEO Audit Project - Client B,35119,income,Services
+2026-01-28,Home Office Internet Bill,1958,expense,Utilities
+2026-01-29,Figma Pro Annual Plan,3082,expense,Software
+2026-02-03,Income Tax Advance Payment,19573,expense,Taxes
+2026-02-03,GST Filing Fee - CA,3748,expense,Taxes
+2026-02-07,Professional Course - Udemy,2650,expense,Software
+2026-02-07,Figma Pro Annual Plan,3034,expense,Software
+2026-02-08,GitHub Copilot & Tools,2289,expense,Software
+2026-02-09,Home Office Internet Bill,1975,expense,Utilities
+2026-02-10,Laptop SSD Upgrade,7190,expense,Equipment
+2026-02-11,Home Office Internet Bill,1575,expense,Utilities
+2026-02-13,Home Office Internet Bill,1982,expense,Utilities
+2026-02-13,Professional Course - Udemy,3319,expense,Software
+2026-02-14,Home Office Internet Bill,1787,expense,Utilities
+2026-02-14,GitHub Copilot & Tools,1735,expense,Software
+2026-02-15,External Hard Drive - Backup,4166,expense,Equipment
+2026-02-16,Brand Identity Project - Startup B,45171,income,Services
+2026-02-18,Social Media Marketing Consultation,21502,income,Services
+2026-02-19,Logo Design Project - Startup,16152,income,Services
+2026-02-21,Software Subscriptions,5283,expense,Software
+2026-02-22,Professional Course - Udemy,3064,expense,Software
+2026-02-22,Adobe Creative Cloud Subscription,3974,expense,Software
+2026-02-25,Software Subscriptions,5896,expense,Software
+2026-02-25,React App Development - Client C,85031,income,Services
+2026-02-26,GST Filing Fee - CA,3106,expense,Taxes
+2026-02-27,Logo Design Project - Startup,18859,income,Services
+2026-02-28,Professional Course - Udemy,3368,expense,Software
+2026-03-01,Content Writing Contract,24989,income,Services
+2026-03-03,SEO Audit Project - Client B,36697,income,Services
+2026-03-06,Home Office Internet Bill,1612,expense,Utilities
+2026-03-07,GitHub Copilot & Tools,2242,expense,Software
+2026-03-08,Adobe Creative Cloud Subscription,4249,expense,Software
+2026-03-08,GST Filing Fee - CA,3217,expense,Taxes
+2026-03-09,Content Writing Contract,23564,income,Services
+2026-03-09,Figma Pro Annual Plan,2920,expense,Software
+2026-03-10,React App Development - Client C,79768,income,Services
+2026-03-10,Mobile App UI Project,72443,income,Services
+2026-03-11,Content Writing Contract,25086,income,Services
+2026-03-11,E-commerce Redesign Project,69653,income,Services
+2026-03-17,Home Office Internet Bill,2029,expense,Utilities
+2026-03-18,Figma Pro Annual Plan,3249,expense,Software
+2026-03-19,Adobe Creative Cloud Subscription,4471,expense,Software
+2026-03-22,Content Writing Contract,22890,income,Services
+2026-03-22,E-commerce Redesign Project,87111,income,Services
+2026-03-22,GitHub Copilot & Tools,2012,expense,Software
