@@ -17,7 +17,11 @@ import NotFound from './pages/NotFound';
 function AppRoutes() {
   const { isReady, hasStarted } = useData();
 
-  if (!isReady) return null; // wait for AsyncStorage init
+  if (!isReady) return (
+    <div className="page-loading" style={{ height: '100vh', background: 'var(--bg-primary)' }}>
+      <div className="spinner" />
+    </div>
+  );
 
   if (!hasStarted) {
     return (
@@ -40,7 +44,7 @@ function AppRoutes() {
           <Route path="/cash-flow" element={<CashFlow />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/sheet" element={<Sheet />} />
-        <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>

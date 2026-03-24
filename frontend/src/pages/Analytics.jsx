@@ -54,50 +54,63 @@ export default function Analytics() {
     URL.revokeObjectURL(url);
   };
 
-  if (loading) return <div className="page-loading"><div className="spinner" /></div>;
+  if (loading) return (
+    <div className="page-loading">
+      <div className="spinner" />
+      <p>Loading your analytics...</p>
+    </div>
+  );
 
   return (
     <div>
       <Header title="Analytics" subtitle="Deep dive into your financial trends" />
       <div className="page-content animate-in">
 
-        {/* KPI Strip */}
-        <div className="grid-4 mb-28">
-          {[
-            { label: 'Total Revenue', value: fmt(totalIncome), icon: '💰', color: 'rgba(34,211,165,0.1)', border: 'rgba(34,211,165,0.2)' },
-            { label: 'Total Expenses', value: fmt(totalExpenses), icon: '📤', color: 'rgba(247,92,126,0.1)', border: 'rgba(247,92,126,0.2)' },
-            { label: 'Net Profit', value: fmt(netProfit), icon: '📈', color: 'rgba(124,111,247,0.1)', border: 'rgba(124,111,247,0.2)' },
-            { label: 'Avg Monthly Revenue', value: fmt(Math.round(avgMonthly)), icon: '📊', color: 'rgba(56,189,248,0.1)', border: 'rgba(56,189,248,0.2)' },
-          ].map((k, i) => (
-            <div key={i} className="stat-card" style={{ background: k.color, border: `1px solid ${k.border}` }}>
-              <div className="stat-icon" style={{ background: k.color }}>{k.icon}</div>
-              <div className="stat-label">{k.label}</div>
-              <div className="stat-value">{k.value}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Bar Chart */}
-        <div className="chart-container" style={{ marginBottom: 20 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
-            <div className="chart-title" style={{ marginBottom: 0 }}>Monthly Revenue vs Expenses</div>
-            <button className="btn btn-secondary btn-sm" onClick={exportChart}>📥 Export Data</button>
+        {trend.length === 0 ? (
+          <div className="empty-state card" style={{ padding: '80px 20px' }}>
+            <div style={{ fontSize: 48, marginBottom: 16 }}>📊</div>
+            <h3 style={{ fontSize: 20, marginBottom: 8, color: 'var(--text-primary)' }}>No Data Available</h3>
+            <p style={{ color: 'var(--text-muted)' }}>Upload bank statements or add transactions to unlock your analytics.</p>
           </div>
+        ) : (
+          <>
+            {/* KPI Strip */}
+            <div className="grid-4 mb-28">
+              {[
+                { label: 'Total Revenue', value: fmt(totalIncome), icon: '💰', color: 'rgba(34,211,165,0.1)', border: 'rgba(34,211,165,0.2)' },
+                { label: 'Total Expenses', value: fmt(totalExpenses), icon: '📤', color: 'rgba(247,92,126,0.1)', border: 'rgba(247,92,126,0.2)' },
+                { label: 'Net Profit', value: fmt(netProfit), icon: '📈', color: 'rgba(124,111,247,0.1)', border: 'rgba(124,111,247,0.2)' },
+                { label: 'Avg Monthly Revenue', value: fmt(Math.round(avgMonthly)), icon: '📊', color: 'rgba(56,189,248,0.1)', border: 'rgba(56,189,248,0.2)' },
+              ].map((k, i) => (
+                <div key={i} className="stat-card" style={{ background: k.color, border: `1px solid ${k.border}` }}>
+                  <div className="stat-icon" style={{ background: k.color }}>{k.icon}</div>
+                  <div className="stat-label">{k.label}</div>
+                  <div className="stat-value">{k.value}</div>
+                </div>
+              ))}
+            </div>
 
-          <ResponsiveContainer width="100%" height={280}>
-            <BarChart data={trend} margin={{ top: 5, right: 10, left: 10, bottom: 0 }} barGap={4}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
-              <XAxis dataKey="month" tick={{ fill: '#606080', fontSize: 12 }} axisLine={false} tickLine={false} />
-              <YAxis tick={{ fill: '#606080', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={v => `₹${(v / 1000).toFixed(0)}k`} />
-              <Tooltip content={<TTip />} />
-              <Bar dataKey="income" name="Revenue" fill="#22d3a5" radius={[6, 6, 0, 0]} />
-              <Bar dataKey="expenses" name="Expenses" fill="#f75c7e" radius={[6, 6, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+            {/* Bar Chart */}
+            <div className="chart-container" style={{ marginBottom: 20 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+                <div className="chart-title" style={{ marginBottom: 0 }}>Monthly Revenue vs Expenses</div>
+                <button className="btn btn-secondary btn-sm" onClick={exportChart}>📥 Export Data</button>
+              </div>
 
-        <div className="analytics-grid">
-          {/* Profit Trend */}
+              <ResponsiveContainer width="100%" height={280}>
+                <BarChart data={trend} margin={{ top: 5, right: 10, left: 10, bottom: 0 }} barGap={4}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                  <XAxis dataKey="month" tick={{ fill: '#606080', fontSize: 12 }} axisLine={false} tickLine={false} />
+                  <YAxis tick={{ fill: '#606080', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={v => `₹${(v / 1000).toFixed(0)}k`} />
+                  <Tooltip content={<TTip />} />
+                  <Bar dataKey="income" name="Revenue" fill="#22d3a5" radius={[6, 6, 0, 0]} />
+                  <Bar dataKey="expenses" name="Expenses" fill="#f75c7e" radius={[6, 6, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+
+            <div className="analytics-grid">
+              {/* Profit Trend */}
           <div className="chart-container">
             <div className="chart-title">Net Profit Trend</div>
             <ResponsiveContainer width="100%" height={220}>
@@ -165,6 +178,8 @@ export default function Analytics() {
           </table>
         </div>
 
+        </>
+        )}
       </div>
     </div>
   );

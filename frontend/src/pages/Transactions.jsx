@@ -222,6 +222,12 @@ export default function Transactions() {
         <div className="card">
           {loading ? (
             <div className="empty-state"><div className="spinner" /></div>
+          ) : transactions.length === 0 && (filter.search || filter.type) ? (
+            <div className="empty-state">
+              <div className="empty-icon">🔍</div>
+              <h3>No matching transactions</h3>
+              <p>Try adjusting your search or filters.</p>
+            </div>
           ) : transactions.length === 0 ? (
             <div className="empty-state">
               <div className="empty-icon">📭</div>
