@@ -9,7 +9,6 @@
     "dev": "node --watch src/server.js"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
