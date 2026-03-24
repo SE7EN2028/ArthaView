@@ -1,0 +1,149 @@
+.sheet-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 32px;
+  overflow: hidden;
+}
+
+.sheet-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: var(--radius-md);
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+}
+
+.sheet-container {
+  flex: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sheet-scroll {
+  flex: 1;
+  overflow: auto;
+}
+
+.sheet-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.sheet-table th {
+  position: sticky;
+  top: 0;
+  background: var(--bg-card);
+  z-index: 10;
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sheet-table td {
+  padding: 0;
+  background: var(--bg-card);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-right: 1px solid rgba(255,255,255,0.02);
+  transition: background 0.1s;
+}
+
+.sheet-table tr:hover td {
+  background: rgba(124, 111, 247, 0.03);
+}
+
+.sheet-input, .sheet-select {
+  width: 100%;
+  padding: 14px 14px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  font-size: 13px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.sheet-input:focus, .sheet-select:focus {
+  background: var(--bg-secondary);
+  border-color: var(--accent-primary);
+  box-shadow: inset 0 0 0 1px var(--accent-primary);
+}
+
+.sheet-select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23606080%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 8px auto;
+  padding-right: 30px;
+}
+
+.sheet-select option {
+  background: var(--bg-secondary);
+}
+
+.amount-cell {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.amount-cell.income { color: var(--accent-green); }
+.amount-cell.expense { color: var(--accent-red); }
+
+.row-delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.sheet-table tr:hover .row-delete-btn {
+  opacity: 1;
+}
+
+.row-delete-btn:hover {
+  background: rgba(247, 92, 126, 0.15);
+  color: var(--accent-red);
+}
+
+@media (max-width: 800px) {
+  .sheet-page { height: auto; display: block; }
+  .sheet-container { overflow: visible; }
+}
