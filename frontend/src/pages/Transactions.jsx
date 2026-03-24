@@ -16,6 +16,7 @@ export default function Transactions() {
   const [form, setForm] = useState(emptyForm);
   const [submitting, setSubmitting] = useState(false);
   const [filter, setFilter] = useState({ type: '', search: '' });
+  const [sort, setSort] = useState({ col: 'date', dir: 'desc' });
   const { toast } = useToast();
 
   const load = () => {
@@ -55,6 +56,17 @@ export default function Transactions() {
 
   const totalIncome = transactions.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
   const totalExpense = transactions.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
+
+  const toggleSort = (col) => setSort(s => ({ col, dir: s.col === col && s.dir === 'asc' ? 'desc' : 'asc' }));
+  const sortIcon = (col) => sort.col === col ? (sort.dir === 'asc' ? ' ▲' : ' ▼') : ' ⬍';
+
+  const sorted = [...transactions].sort((a, b) => {
+    let av = a[sort.col], bv = b[sort.col];
+    if (sort.col === 'amount') { av = +av; bv = +bv; }
+    if (av < bv) return sort.dir === 'asc' ? -1 : 1;
+    if (av > bv) return sort.dir === 'asc' ? 1 : -1;
+    return 0;
+  });
 
   return (
     <div>
@@ -173,16 +185,16 @@ export default function Transactions() {
               <table className="data-table">
                 <thead>
                   <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Category</th>
-                    <th>Type</th>
-                    <th>Amount</th>
+                    <th onClick={() => toggleSort('date')} style={{cursor:'pointer'}}>Date{sortIcon('date')}</th>
+                    <th onClick={() => toggleSort('description')} style={{cursor:'pointer'}}>Description{sortIcon('description')}</th>
+                    <th onClick={() => toggleSort('category')} style={{cursor:'pointer'}}>Category{sortIcon('category')}</th>
+                    <th onClick={() => toggleSort('type')} style={{cursor:'pointer'}}>Type{sortIcon('type')}</th>
+                    <th onClick={() => toggleSort('amount')} style={{cursor:'pointer'}}>Amount{sortIcon('amount')}</th>
                     <th></th>
                   </tr>
                 </thead>
                 <tbody>
-                  {transactions.map(t => (
+                  {sorted.map(t => (
                     <tr key={t.id}>
                       <td className="date-cell">{new Date(t.date).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })}</td>
                       <td className="desc-cell">{t.description}</td>
