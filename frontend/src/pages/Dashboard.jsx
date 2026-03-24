@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { getSummary, getTrend, getCategories, getHealthScore } from '../api/client';
 import {
@@ -57,6 +58,8 @@ export default function Dashboard() {
   const [categories, setCategories] = useState([]);
   const [health, setHealth] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [lastRefreshed, setLastRefreshed] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     Promise.all([getSummary(), getTrend(), getCategories(), getHealthScore()])
@@ -65,6 +68,7 @@ export default function Dashboard() {
         setTrend(t.data);
         setCategories(c.data);
         setHealth(h.data);
+        setLastRefreshed(new Date());
       })
       .finally(() => setLoading(false));
   }, []);
@@ -119,6 +123,24 @@ export default function Dashboard() {
     <div>
       <Header title="Dashboard" subtitle="Your business at a glance" />
       <div className="page-content animate-in">
+
+        {/* Quick Actions */}
+        <div className="quick-actions-row">
+          {[
+            { label: 'Import Data', icon: '📥', path: '/upload' },
+            { label: 'Add Transaction', icon: '➕', path: '/transactions' },
+            { label: 'Analytics', icon: '📊', path: '/analytics' },
+            { label: 'AI Insights', icon: '✨', path: '/insights' },
+          ].map(a => (
+            <button key={a.path} className="quick-action-btn" onClick={() => navigate(a.path)}>
+              <span>{a.icon}</span>
+              <span>{a.label}</span>
+            </button>
+          ))}
+          {lastRefreshed && (
+            <span className="last-refreshed">Updated {lastRefreshed.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })}</span>
+          )}
+        </div>
 
         {/* Stat Cards */}
         <div className="grid-4 mb-28">
