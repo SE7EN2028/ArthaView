@@ -327,6 +327,7 @@ body {
 .badge-amber { background: rgba(245, 158, 11, 0.12); color: var(--accent-amber); }
 .badge-purple { background: rgba(124, 111, 247, 0.12); color: var(--accent-primary); }
 .badge-blue { background: rgba(56, 189, 248, 0.12); color: var(--accent-blue); }
+.badge-neutral { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); }
 
 /* Divider */
 .divider { height: 1px; background: var(--border); margin: 20px 0; }
