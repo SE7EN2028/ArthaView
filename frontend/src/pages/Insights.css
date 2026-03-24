@@ -166,6 +166,21 @@
   background: var(--bg-secondary);
 }
 
+.chat-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.chat-char-count {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  font-size: 10px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+
 .chat-input {
   flex: 1;
   background: var(--bg-card);

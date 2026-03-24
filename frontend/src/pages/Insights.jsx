@@ -5,11 +5,12 @@ import { getAnomalies, getRecommendations } from '../api/client';
 import './Insights.css';
 
 const SUGGESTED = [
-  'How can I improve my profit margin?',
-  'Which expenses should I cut first?',
-  'Is my cash flow healthy?',
-  'What are the biggest risks in my finances?',
-  'How does my business compare to industry standards?',
+  'Summarize my financial health in 3 bullet points',
+  'Which expense category is growing fastest?',
+  'How can I improve my profit margin by 10%?',
+  'What is my cash burn rate this month?',
+  'Show me the biggest risks in my finances',
+  'Give me 3 cost-cutting recommendations',
 ];
 
 export default function Insights() {
@@ -23,6 +24,10 @@ export default function Insights() {
   const [anomalies, setAnomalies] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
   const bottomRef = useRef(null);
+
+  const INITIAL_MSG = { role: 'assistant', content: '👋 Hi! I\'m your ArthaView AI advisor powered by Groq (LLaMA 3). I\'ve already analyzed your financial data. Ask me anything about your business!' };
+
+  const clearChat = () => setMessages([INITIAL_MSG]);
 
   useEffect(() => {
     Promise.all([getQuickInsights(), getAnomalies(), getRecommendations()])
@@ -76,6 +81,7 @@ export default function Insights() {
                   <span className="status-dot" /> Online · LLaMA 3 via Groq
                 </div>
               </div>
+              <button className="btn btn-secondary btn-sm" onClick={clearChat} style={{ marginLeft: 'auto' }}>↺ Clear</button>
             </div>
 
             <div className="chat-messages">
@@ -107,6 +113,7 @@ export default function Insights() {
             </div>
 
             <div className="chat-input-row">
+            <div className="chat-input-wrapper">
               <textarea
                 className="chat-input"
                 placeholder="Ask about your finances..."
@@ -114,11 +121,14 @@ export default function Insights() {
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKey}
                 rows={1}
+                maxLength={500}
               />
-              <button className="chat-send-btn" onClick={() => sendMessage()} disabled={loading || !input.trim()}>
-                ➤
-              </button>
+              <div className="chat-char-count">{input.length}/500</div>
             </div>
+            <button className="chat-send-btn" onClick={() => sendMessage()} disabled={loading || !input.trim()}>
+              ➤
+            </button>
+          </div>
           </div>
 
           {/* RIGHT: Panels */}
