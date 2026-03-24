@@ -41,6 +41,19 @@ export default function Analytics() {
   const netProfit = totalIncome - totalExpenses;
   const avgMonthly = trend.length ? totalIncome / trend.length : 0;
 
+  const exportChart = () => {
+    const headers = ['Month', 'Income', 'Expenses', 'Profit'];
+    const rows = profitData.map(t => [t.month, t.income, t.expenses, t.profit]);
+    const csv = [headers, ...rows].map(r => r.join(',')).join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `arthaview-trend-${Date.now()}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   if (loading) return <div className="page-loading"><div className="spinner" /></div>;
 
   return (
@@ -66,7 +79,11 @@ export default function Analytics() {
 
         {/* Bar Chart */}
         <div className="chart-container" style={{ marginBottom: 20 }}>
-          <div className="chart-title">Monthly Revenue vs Expenses</div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+            <div className="chart-title" style={{ marginBottom: 0 }}>Monthly Revenue vs Expenses</div>
+            <button className="btn btn-secondary btn-sm" onClick={exportChart}>📥 Export Data</button>
+          </div>
+
           <ResponsiveContainer width="100%" height={280}>
             <BarChart data={trend} margin={{ top: 5, right: 10, left: 10, bottom: 0 }} barGap={4}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
