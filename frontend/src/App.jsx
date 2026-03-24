@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ToastProvider } from './context/ToastContext';
 import { DataProvider, useData } from './context/DataContext';
 import ErrorBoundary from './components/ErrorBoundary';
+import ScrollToTop from './components/ScrollToTop';
 import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import Transactions from './pages/Transactions';
@@ -49,6 +50,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <DataProvider>
         <ToastProvider>
           <ErrorBoundary>
@@ -59,3 +61,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
