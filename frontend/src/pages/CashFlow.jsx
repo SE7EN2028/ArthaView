@@ -153,34 +153,54 @@ export default function CashFlow() {
                 <th>Revenue</th>
                 <th>Expenses</th>
                 <th>Cash Flow</th>
+                <th>Cumulative</th>
                 <th>MoM Change</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody>
-              {trend.map((row, i) => (
-                <tr key={i}>
-                  <td style={{ fontWeight: 600 }}>{row.month}</td>
-                  <td style={{ color: 'var(--accent-green)', fontWeight: 600 }}>{fmt(row.income)}</td>
-                  <td style={{ color: 'var(--accent-red)' }}>{fmt(row.expenses)}</td>
-                  <td style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: row.cashFlow >= 0 ? 'var(--accent-green)' : 'var(--accent-red)' }}>
-                    {row.cashFlow >= 0 ? '+' : ''}{fmt(row.cashFlow)}
-                  </td>
-                  <td>
-                    {i > 0 && trend[i-1].cashFlow !== 0 ? (
-                      <span className={row.cashFlow > trend[i-1].cashFlow ? 'badge badge-green' : 'badge badge-red'}>
-                        {row.cashFlow > trend[i-1].cashFlow ? '↑' : '↓'} {Math.abs(((row.cashFlow - trend[i-1].cashFlow) / Math.abs(trend[i-1].cashFlow)) * 100).toFixed(1)}%
-                      </span>
-                    ) : <span className="text-muted">-</span>}
-                  </td>
-                  <td>
-                    <span className={`badge ${row.cashFlow >= 0 ? 'badge-green' : 'badge-red'}`}>
-                      {row.cashFlow >= 0 ? '✓ Positive' : '✗ Negative'}
-                    </span>
+              {trend.length === 0 ? (
+                <tr>
+                  <td colSpan="7" style={{ textAlign: 'center', padding: '32px', color: 'var(--text-secondary)' }}>
+                    <div style={{ fontSize: 24, marginBottom: 8 }}>📭</div>
+                    <div>No cash flow data available yet.</div>
                   </td>
                 </tr>
-              ))}
-</tbody>
+              ) : (
+                [...trend].reverse().map((row, idx) => {
+                  const originalIndex = trend.length - 1 - idx;
+                  const prevRow = originalIndex > 0 ? trend[originalIndex - 1] : null;
+                  const hasPrev = prevRow && prevRow.cashFlow !== 0;
+                  const percentage = hasPrev ? ((row.cashFlow - prevRow.cashFlow) / Math.abs(prevRow.cashFlow)) * 100 : 0;
+                  
+                  return (
+                    <tr key={row.month}>
+                      <td style={{ fontWeight: 600 }}>{row.month}</td>
+                      <td style={{ color: 'var(--accent-green)', fontWeight: 600 }}>{fmt(row.income)}</td>
+                      <td style={{ color: 'var(--accent-red)' }}>{fmt(row.expenses)}</td>
+                      <td style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: row.cashFlow >= 0 ? 'var(--accent-green)' : 'var(--accent-red)' }}>
+                        {row.cashFlow >= 0 ? '+' : ''}{fmt(row.cashFlow)}
+                      </td>
+                      <td style={{ fontWeight: 600, color: 'var(--text-secondary)' }}>
+                        {row.cumulative >= 0 ? '+' : ''}{fmt(row.cumulative)}
+                      </td>
+                      <td>
+                        {hasPrev ? (
+                          <span className={`badge ${percentage > 0 ? 'badge-green' : percentage < 0 ? 'badge-red' : 'badge-neutral'}`}>
+                            {percentage > 0 ? '↑' : percentage < 0 ? '↓' : '−'} {Math.abs(percentage).toFixed(1)}%
+                          </span>
+                        ) : <span className="text-muted">-</span>}
+                      </td>
+                      <td>
+                        <span className={`badge ${row.cashFlow > 0 ? 'badge-green' : row.cashFlow < 0 ? 'badge-red' : 'badge-neutral'}`}>
+                          {row.cashFlow > 0 ? '✓ Positive' : row.cashFlow < 0 ? '✗ Negative' : '− Neutral'}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })
+              )}
+            </tbody>
           </table>
         </div>
 
