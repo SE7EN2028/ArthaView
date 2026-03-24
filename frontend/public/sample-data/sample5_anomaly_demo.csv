@@ -1,0 +1,161 @@
+Date,Description,Amount,Type,Category
+2025-09-02,Product Sales January,47437,income,Sales
+2025-09-04,Staff Salaries,32237,expense,Salaries
+2025-09-04,Raw Material Purchase,15646,expense,Inventory
+2025-09-05,Product Sales January,59197,income,Sales
+2025-09-06,Office Rent,13042,expense,Rent
+2025-09-07,Utility Bills,3487,expense,Utilities
+2025-09-10,Office Rent,11377,expense,Rent
+2025-09-10,Office Rent,13179,expense,Rent
+2025-09-10,Utility Bills,3501,expense,Utilities
+2025-09-10,Raw Material Purchase,12174,expense,Inventory
+2025-09-11,Office Rent,11685,expense,Rent
+2025-09-11,Raw Material Purchase - PRICE SPIKE,34790,expense,Inventory
+2025-09-12,Staff Salaries,30077,expense,Salaries
+2025-09-12,Office Rent,12359,expense,Rent
+2025-09-12,Office Rent,13359,expense,Rent
+2025-09-13,Staff Salaries,27783,expense,Salaries
+2025-09-14,Emergency Marketing Campaign,14770,expense,Marketing
+2025-09-17,Product Sales February,45527,income,Sales
+2025-09-17,Office Rent,11454,expense,Rent
+2025-09-19,Emergency Marketing Campaign,14409,expense,Marketing
+2025-09-24,Staff Salaries,26651,expense,Salaries
+2025-09-25,Utility Bills - Summer Surge,12525,expense,Utilities
+2025-09-26,Product Sales February,51561,income,Sales
+2025-09-27,Office Rent,11510,expense,Rent
+2025-09-30,Emergency Marketing Campaign,13758,expense,Marketing
+2025-09-30,Utility Bills,4167,expense,Utilities
+2025-09-30,Equipment Breakdown Repair,25146,expense,Equipment
+2025-10-03,Office Rent,10615,expense,Rent
+2025-10-04,Office Rent,13185,expense,Rent
+2025-10-06,Product Sales January,47531,income,Sales
+2025-10-07,Emergency Marketing Campaign,13296,expense,Marketing
+2025-10-07,Staff Salaries,30389,expense,Salaries
+2025-10-11,Product Sales February,44431,income,Sales
+2025-10-14,Consultant Fee - Unplanned,17376,expense,Services
+2025-10-18,Product Sales March - Low Season,33108,income,Sales
+2025-10-18,Utility Bills,3637,expense,Utilities
+2025-10-18,Office Rent,12970,expense,Rent
+2025-10-23,Product Sales January,54915,income,Sales
+2025-10-24,Staff Salaries,25541,expense,Salaries
+2025-10-28,Product Sales March - Low Season,29959,income,Sales
+2025-10-28,Staff Salaries,26858,expense,Salaries
+2025-10-30,Product Sales January,51676,income,Sales
+2025-10-30,Staff Salaries,32086,expense,Salaries
+2025-11-02,Staff Salaries,30251,expense,Salaries
+2025-11-03,Product Sales March - Low Season,30086,income,Sales
+2025-11-03,Raw Material Purchase - PRICE SPIKE,34650,expense,Inventory
+2025-11-04,Utility Bills,3592,expense,Utilities
+2025-11-04,Utility Bills,4725,expense,Utilities
+2025-11-05,Office Rent,13163,expense,Rent
+2025-11-06,Utility Bills,4348,expense,Utilities
+2025-11-09,Utility Bills,3636,expense,Utilities
+2025-11-09,Office Rent,13779,expense,Rent
+2025-11-10,Product Sales February,44208,income,Sales
+2025-11-11,Product Sales March - Low Season,33708,income,Sales
+2025-11-11,Utility Bills,3752,expense,Utilities
+2025-11-12,Utility Bills,4597,expense,Utilities
+2025-11-14,Equipment Breakdown Repair,21761,expense,Equipment
+2025-11-17,Emergency Marketing Campaign,13526,expense,Marketing
+2025-11-17,Raw Material Purchase - PRICE SPIKE,36034,expense,Inventory
+2025-11-17,Product Sales January,57696,income,Sales
+2025-11-17,Utility Bills,3822,expense,Utilities
+2025-11-19,Office Rent,12187,expense,Rent
+2025-11-19,Office Rent,11341,expense,Rent
+2025-11-20,Raw Material Purchase,16767,expense,Inventory
+2025-11-22,Staff Salaries,30351,expense,Salaries
+2025-11-25,Staff Salaries,28815,expense,Salaries
+2025-11-26,Office Rent,11379,expense,Rent
+2025-11-28,Staff Salaries,34409,expense,Salaries
+2025-11-29,Utility Bills - Summer Surge,11481,expense,Utilities
+2025-11-29,Utility Bills - Summer Surge,12877,expense,Utilities
+2025-11-29,Product Sales March - Low Season,27894,income,Sales
+2025-12-01,Staff Salaries,27713,expense,Salaries
+2025-12-04,Emergency Marketing Campaign,13998,expense,Marketing
+2025-12-04,Product Sales February,40850,income,Sales
+2025-12-05,Consultant Fee - Unplanned,16716,expense,Services
+2025-12-06,Raw Material Purchase,13448,expense,Inventory
+2025-12-07,Product Sales March - Low Season,30629,income,Sales
+2025-12-07,Product Sales March - Low Season,26533,income,Sales
+2025-12-08,Office Rent,11979,expense,Rent
+2025-12-09,Utility Bills,4293,expense,Utilities
+2025-12-10,Utility Bills,4435,expense,Utilities
+2025-12-11,Staff Salaries,31070,expense,Salaries
+2025-12-12,Office Rent,10262,expense,Rent
+2025-12-13,Equipment Breakdown Repair,19526,expense,Equipment
+2025-12-16,Utility Bills,4269,expense,Utilities
+2025-12-17,Raw Material Purchase,13470,expense,Inventory
+2025-12-20,Office Rent,11653,expense,Rent
+2025-12-20,Office Rent,12156,expense,Rent
+2025-12-23,Utility Bills,4408,expense,Utilities
+2025-12-23,Utility Bills,3873,expense,Utilities
+2025-12-23,Consultant Fee - Unplanned,19769,expense,Services
+2025-12-24,Office Rent,10670,expense,Rent
+2025-12-24,Raw Material Purchase - PRICE SPIKE,42065,expense,Inventory
+2025-12-29,Office Rent,13604,expense,Rent
+2026-01-03,Office Rent,11043,expense,Rent
+2026-01-03,Product Sales March - Low Season,32033,income,Sales
+2026-01-05,Utility Bills,3741,expense,Utilities
+2026-01-07,Product Sales March - Low Season,33219,income,Sales
+2026-01-08,Utility Bills,3784,expense,Utilities
+2026-01-10,Staff Salaries,33283,expense,Salaries
+2026-01-10,Utility Bills,3437,expense,Utilities
+2026-01-12,Utility Bills,4667,expense,Utilities
+2026-01-12,Product Sales February,54708,income,Sales
+2026-01-13,Office Rent,10672,expense,Rent
+2026-01-14,Raw Material Purchase - PRICE SPIKE,41751,expense,Inventory
+2026-01-14,Consultant Fee - Unplanned,18593,expense,Services
+2026-01-15,Office Rent,12295,expense,Rent
+2026-01-16,Office Rent,12477,expense,Rent
+2026-01-16,Consultant Fee - Unplanned,15931,expense,Services
+2026-01-20,Product Sales March - Low Season,29548,income,Sales
+2026-01-20,Utility Bills,4148,expense,Utilities
+2026-01-21,Office Rent,10381,expense,Rent
+2026-01-24,Raw Material Purchase,17622,expense,Inventory
+2026-01-26,Equipment Breakdown Repair,21381,expense,Equipment
+2026-01-26,Product Sales February,49843,income,Sales
+2026-01-27,Utility Bills - Summer Surge,10635,expense,Utilities
+2026-01-31,Utility Bills - Summer Surge,12873,expense,Utilities
+2026-01-31,Raw Material Purchase,12979,expense,Inventory
+2026-02-01,Office Rent,11130,expense,Rent
+2026-02-01,Product Sales March - Low Season,29825,income,Sales
+2026-02-02,Product Sales January,46667,income,Sales
+2026-02-05,Staff Salaries,33933,expense,Salaries
+2026-02-10,Utility Bills - Summer Surge,10819,expense,Utilities
+2026-02-11,Raw Material Purchase - PRICE SPIKE,43145,expense,Inventory
+2026-02-14,Office Rent,12328,expense,Rent
+2026-02-14,Consultant Fee - Unplanned,16584,expense,Services
+2026-02-15,Utility Bills - Summer Surge,10965,expense,Utilities
+2026-02-16,Product Sales January,58646,income,Sales
+2026-02-16,Office Rent,12993,expense,Rent
+2026-02-24,Office Rent,12816,expense,Rent
+2026-02-24,Raw Material Purchase,18003,expense,Inventory
+2026-02-25,Product Sales January,49068,income,Sales
+2026-02-25,Staff Salaries,30411,expense,Salaries
+2026-02-25,Staff Salaries,27683,expense,Salaries
+2026-03-01,Raw Material Purchase - PRICE SPIKE,37836,expense,Inventory
+2026-03-04,Staff Salaries,26021,expense,Salaries
+2026-03-04,Utility Bills,4116,expense,Utilities
+2026-03-05,Product Sales January,59490,income,Sales
+2026-03-05,Staff Salaries,28021,expense,Salaries
+2026-03-08,Utility Bills - Summer Surge,12246,expense,Utilities
+2026-03-09,Consultant Fee - Unplanned,16634,expense,Services
+2026-03-11,Utility Bills,3730,expense,Utilities
+2026-03-13,Staff Salaries,30799,expense,Salaries
+2026-03-14,Office Rent,11268,expense,Rent
+2026-03-14,Product Sales January,53865,income,Sales
+2026-03-15,Emergency Marketing Campaign,13366,expense,Marketing
+2026-03-15,Staff Salaries,26887,expense,Salaries
+2026-03-15,Raw Material Purchase,13438,expense,Inventory
+2026-03-16,Equipment Breakdown Repair,23487,expense,Equipment
+2026-03-16,Raw Material Purchase,13219,expense,Inventory
+2026-03-16,Product Sales March - Low Season,26910,income,Sales
+2026-03-18,Raw Material Purchase,13459,expense,Inventory
+2026-03-19,Raw Material Purchase - PRICE SPIKE,35572,expense,Inventory
+2026-03-19,Raw Material Purchase,17399,expense,Inventory
+2026-03-19,Product Sales March - Low Season,32669,income,Sales
+2026-03-20,Raw Material Purchase,15995,expense,Inventory
+2026-03-21,Office Rent,12571,expense,Rent
+2026-03-22,Office Rent,11694,expense,Rent
+2026-03-24,Product Sales March - Low Season,28410,income,Sales
+2026-03-25,Raw Material Purchase - PRICE SPIKE,38889,expense,Inventory
