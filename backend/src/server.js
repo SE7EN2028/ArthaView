@@ -20,6 +20,14 @@ app.use(morgan('dev'));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
+// Simulated Rate Limiting Headers
+app.use((req, res, next) => {
+  res.setHeader('X-RateLimit-Limit', '100');
+  res.setHeader('X-RateLimit-Remaining', '99');
+  res.setHeader('X-RateLimit-Reset', Date.now() + 60000);
+  next();
+});
+
 // Routes
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/analytics', analyticsRoutes);
@@ -27,9 +35,12 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/ai', aiRoutes);
 
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'ArthaView API is running' });
+  res.json({ status: 'ok', message: 'ArthaView API is running', timestamp: new Date().toISOString() });
 });
 
 app.listen(PORT, () => {
+  console.log('=================================');
   console.log(`🚀 ArthaView backend running on http://localhost:${PORT}`);
+  console.log(`🕒 Started at: ${new Date().toLocaleString()}`);
+  console.log('=================================');
 });
