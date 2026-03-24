@@ -1,7 +1,9 @@
 {
   "name": "arthaview",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "ArthaView — Smart financial insights for small and medium businesses.",
+  "author": "ArthaView Team",
   "type": "module",
   "scripts": {
     "dev": "vite",
